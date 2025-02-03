@@ -55,24 +55,32 @@
     position: absolute;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     top: -50px;
     transform: rotate(-90deg);
-    text-align: center;
+    text-align: start;
     width: 100px;
+    padding-left: 10px;
     height: 40px;
     text-wrap: nowrap;
      background: #fff;
     border: 1px solid #29547780;
     box-shadow: 0 0 15px #29547730;
     border-radius:8px 15px 15px 8px;
+    transition: .3s ease all;
 }
-
+.rotated-item-text:hover{
+    box-shadow: inset 0 0 15px #29547730;
+    transition: .3s ease all;
+}
 .list-item{
     height: 40px;
     width: 40px;
     margin: 0 5px;
    padding: 7px;
+}
+.table-item:hover{
+    box-shadow: inset 0 0 15px #29547730;
 }
 .list-item:hover{
     background: #29547730;
