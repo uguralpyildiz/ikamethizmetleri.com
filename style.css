@@ -5,7 +5,7 @@
 }
 
 .container-table{
-    max-width: 980px;
+    max-width: 910px;
     margin: auto;
     margin-top: 25px;
     
@@ -30,7 +30,7 @@
 }
 .table-item{
     text-align: center;
-    padding: 10px 15px;
+    padding: 10px 5px;
     background: #fff;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
