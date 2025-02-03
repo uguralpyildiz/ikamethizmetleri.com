@@ -78,8 +78,7 @@
     margin: 0 5px;
 }
 .list-table{
-    background: #ab85dd;
-    border: 1px solid #8a4bdb;
+    
     padding: 10px 0;
     border-radius: 15px;
     margin-top: 5px;
@@ -87,6 +86,5 @@
 }
 
  .new-table:nth-of-type(odd) .list-table{
-    background: #dec5ff;
-    border: 1px solid #b984ff;
+    
 }
