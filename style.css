@@ -80,10 +80,10 @@
    padding: 7px;
 }
 .table-item:hover{
-    box-shadow: inset 0 0 15px #29547730;
+    box-shadow: inset 0 0 15px #29547780;
 }
 .list-item:hover{
-    background: #29547730;
+    background: #29547780;
     cursor: pointer;
 }
 .list-item img{
