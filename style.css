@@ -35,7 +35,7 @@
     box-shadow: 0 0 15px #29547799;
     border: 1px solid #295477;
     border-radius: 12px;
-    margin:0 20px;
+    margin:0;
     width: 100px;
 }
 .rotated-item{
@@ -65,14 +65,14 @@
      background: #fff;
     border: 1px solid #295477;
     box-shadow: 0 0 15px #29547799;
-    border-radius: 15px;
+    border-radius:8px 15px 15px 8px;
 }
 
 .list-item{
     height: 40px;
     width: 40px;
     margin: 0 5px;
-   
+   padding: 5px;
 }
 .list-item:hover{
     background: #29547720;
@@ -83,8 +83,7 @@
     height: 100%;
 }
 .list-table{
-    
-    padding: 10px 0;
+    padding: 3px 0;
     border-radius: 15px;
     margin-top: 5px;
     box-shadow: 0 0 15px #29547750;
