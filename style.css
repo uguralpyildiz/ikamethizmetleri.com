@@ -70,7 +70,7 @@
     transition: .3s ease all;
 }
 .rotated-item-text:hover{
-    box-shadow: inset 0 0 15px #29547730;
+    box-shadow: inset 0 0 15px #29547780;
     transition: .3s ease all;
 }
 .list-item{
