@@ -183,4 +183,80 @@
     color: #fff;
  }
 
+ .table-form{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 8px;
  
+ }
+ .table-form-container{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 10px;
+    overflow: hidden;
+ }
+ .form-first-container{
+    flex: 1;
+    padding: 10px 15px;
+    background: #fff;
+    font-size: 16px;
+    box-shadow: 0 0 15px #29547730;
+    border: 1px solid #29547780;
+    border-radius: 12px;
+ }
+.form-first-container-input input, .form-first-container-input select, .upload-file-btn-c{
+    padding: 10px 15px;
+    width: 205px;
+    height: 47px;
+    font-size: 16px;
+    background: #fff;
+    box-shadow: 0 0 15px #29547730;
+    border: 1px solid #29547780;
+    border-radius: 12px;
+    outline: none;
+}
+.upload-btn-f{
+    display: flex;
+    align-items: center;
+    
+    gap: 5px;
+   text-align: center;
+}
+.upload-file-butn {
+    display: none;
+}
+
+ .form-first-container-input input:focus {
+    outline: none;
+     box-shadow: inset 0 0 15px #29547780;
+ }
+
+.form-first-container-input{
+  
+    height: 50px !important;
+  
+}
+
+.table-form-column{
+    display: flex;
+    gap: 25px;
+}
+.square{
+    width: 70px !important;
+    text-align: center;
+}
+.disabled-form{
+    opacity: .5;
+}
+.square-p{
+    width: 30%;
+}
+.flex-phone-input{
+    display: flex;
+    gap: 5px;
+}
+.flex-phone-input select{
+    width: 100px;
+}
