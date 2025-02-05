@@ -236,6 +236,10 @@
     outline: none;
      box-shadow: inset 0 0 15px #29547780;
  }
+ .form-first-container-input input:hover,.form-first-container:hover {
+    outline: none;
+     box-shadow: inset 0 0 15px #29547780;
+ }
 
 .form-first-container-input{
   
