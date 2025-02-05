@@ -55,6 +55,7 @@
     padding-left: 15px !important;
 }
 .table-list{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -129,7 +130,8 @@
 }
 
 .table-container-fluid{
-    overflow: auto;
+    overflow:auto;
+    
     height: 580px;
     padding-right: 5px;
 }
@@ -273,4 +275,8 @@
     cursor: no-drop;
     user-select: none;
     
+}
+.gonder-button-top-absolute{
+    position: absolute;
+    right: -60px;
 }
