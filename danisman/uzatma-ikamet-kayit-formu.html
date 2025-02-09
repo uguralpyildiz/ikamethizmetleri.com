@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="nav-links">
+            <div class="link-button">
+               0 532 674 02 69
+            </div>
+            
+            
+            
+            <div class="her" style="display: flex; align-items: center; gap: 10px;">
+                <div class="link-button">
+                    Depozit: 400
+                </div>
+                <div class="link-button">
+                    Sigorta Bakiyesi: 28172
+                </div>
+            </div>
+            
+        </div>
+    </nav>
+    
+    
+    <nav>
+        <ul>
+            <li><a href="#">Hesaplar</a>
+            </li>
+            <li><a href="#">Müşteri</a>
+    
+                <ul>
+                    <li><a href="musteri-ekle.html">Müşteri Ekle</a>
+                    </li>
+                    <li><a href="musteri-arama.html">Müşteri Arama</a>
+                    </li>
+                    <li><a href="musteri-listesi.html">Müşteri Listesi</a>
+                    </li>
+    
+                </ul>
+            </li>
+            <li><a href="#">Tanımlama</a>
+    
+            </li>
+            <li><a href="#">Sigorta</a>
+            </li>
+            <li><a href="#">Muhasebe</a>
+            </li>
+            <li><a href="#">İletişim</a>
+            </li>
+            <li style="float: right;"><a href="#">(Personel)</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-table" style="max-width: 1073px;">
+        <div class="header-nav-container">
+            <div class="title-box-l">
+                <img width="30" height="30" src="https://img.icons8.com/material-sharp/50/user.png" alt="user" /> Abdullah
+            </div>
+            <div class="header-list" style="width: 515px;">
+                Uzatma İkamet Kayıt Formu
+            </div>
+            <div class="title-box-l">
+                04.02.2025
+            </div>
+        </div>
+
+        <div class="table-form-column">
+            <div class="table-form-container">
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Ad:
+                    </div>
+                    <div class="form-first-container-input">
+                        <input type="text" placeholder="İsim Giriniz">
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Soyad:
+                    </div>
+                    <div class="form-first-container-input">
+                        <input type="text" placeholder="Soyadı Giriniz">
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Anne Adı:
+                    </div>
+                    <div class="form-first-container-input">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Baba Adı:
+                    </div>
+                    <div class="form-first-container-input">
+                        <input type="text">
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        İkamet Türü:
+                    </div>
+                    <div class="form-first-container-input">
+                        <select name="ikamet-izni" id="?">
+                            <option value="">
+                                Seçiniz...
+                            </option>
+                            <option value="">
+                                Kısa Dönem İkamet İzni
+                            </option>
+                            <option value="">
+                                Aile İkamet İzni
+                            </option>
+                            <option value="">
+                                Öğrenci İkamet İzni
+                            </option>
+                            <option value="">
+                                Uzun Dönem İkamet İzni
+                            </option>
+                            <option value="">
+                                İnsani İkamet İzni
+                            </option>
+                            <option value="">
+                                İnsan Tic. Ma. İkam. İzni
+                            </option>
+                        </select>
+            
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Mail Adresi:
+                    </div>
+                    <div class="form-first-container-input">
+                        <input type="email">
+                    </div>
+                </div>
+            
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Ülkesi
+                    </div>
+                    <div class="form-first-container-input">
+                        <select name="ikamet-izni" id="?">
+                            <option value="blank">Seçiniz...</option>
+            
+                        </select>
+            
+                    </div>
+                </div>
+            
+            
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Cinsiyet:
+                    </div>
+                    <div class="form-first-container-input">
+                        <select name="ikamet-izni" id="?">
+                            <option value="">
+                                Seçiniz...
+                            </option>
+                            <option value="">
+                                Erkek
+                            </option>
+                            <option value="">
+                                Kadın
+                            </option>
+                    
+                        </select>
+                    
+                    </div>
+                </div>
+            
+                <div class="table-form ">
+                    <div class="form-first-container">
+                        Yabancı T.C No:
+                    </div>
+                    <div class="form-first-container-input">
+                        <input type="text">
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="table-form-container">
+                <div class="table-form ">
+                    <div class="form-first-container">
+                        İkamet Bitiş Tarihi:
+                    </div>
+                    <div class="form-first-container-input">
+                        <input class="square" type="text" placeholder="Ay">
+                        <input class="square" type="text" placeholder="Gün">
+                        <input class="square" type="text" placeholder="Yıl">
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Önerilen R. Tarihi:
+                    </div>
+                    <div class="form-first-container-input">
+                        <input class="square" type="text" placeholder="Ay">
+                        <input class="square" type="text" placeholder="Gün">
+                        <input class="square" type="text" placeholder="Yıl">
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Doğum Tarihi:
+                    </div>
+                    <div class="form-first-container-input">
+                        <input class="square" type="text" placeholder="Ay">
+                        <input class="square" type="text" placeholder="Gün">
+                        <input class="square" type="text" placeholder="Yıl">
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Telefon No:
+                    </div>
+                    <div class="form-first-container-input ">
+                        <div class="flex-phone-input">
+                            <select name="" id="">
+                                <option value="">Kod</option>
+                                <option value="">532</option>
+                                <option value="">123</option>
+                            </select>
+                            <input style="width: 115px;" type="text" placeholder="Numara">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Adres (İl):
+                    </div>
+                    <div class="form-first-container-input">
+                        <select name="ikamet-izni" id="?">
+                            <option value="">
+                                Seçiniz...
+                            </option>
+                            <option value="">
+                                Kısa Dönem İkamet İzni
+                            </option>
+                            <option value="">
+                                Aile İkamet İzni
+                            </option>
+                            <option value="">
+                                Öğrenci İkamet İzni
+                            </option>
+                            <option value="">
+                                Uzun Dönem İkamet İzni
+                            </option>
+                            <option value="">
+                                İnsani İkamet İzni
+                            </option>
+                            <option value="">
+                                İnsan Tic. Ma. İkam. İzni
+                            </option>
+                        </select>
+                
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Adres (İlçe):
+                    </div>
+                    <div class="form-first-container-input">
+                        <select name="ikamet-izni" id="?">
+                            <option value="">
+                                Seçiniz...
+                            </option>
+                            <option value="">
+                                Kısa Dönem İkamet İzni
+                            </option>
+                            <option value="">
+                                Aile İkamet İzni
+                            </option>
+                            <option value="">
+                                Öğrenci İkamet İzni
+                            </option>
+                            <option value="">
+                                Uzun Dönem İkamet İzni
+                            </option>
+                            <option value="">
+                                İnsani İkamet İzni
+                            </option>
+                            <option value="">
+                                İnsan Tic. Ma. İkam. İzni
+                            </option>
+                        </select>
+                
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Adres (Mahalle):
+                    </div>
+                    <div class="form-first-container-input">
+                        <input type="text" name="" id="">
+                
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Adres (Sokak):
+                    </div>
+                    <div class="form-first-container-input">
+                        <input type="text" name="" id="">
+                
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Adres (Kat & Dairesi):
+                    </div>
+                    <div class="form-first-container-input">
+                        <input type="text" name="" id="">
+                    </div>
+                </div>
+               
+            </div>
+
+            <div class="table-form-container">
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Pasaport
+                    </div>
+                    <div class="form-first-container-input">
+                        <div class="upload-file-btn-c">
+                            <label class="upload-btn-f" for="upload-btn-f"><img width="20" height="20" src="https://img.icons8.com/fluency-systems-filled/50/upload.png" alt="upload" /> Ekle</label>
+                            <input id="upload-btn-f" class="upload-file-butn" type="file">
+                        </div>
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Fotoğraf
+                    </div>
+                    <div class="form-first-container-input">
+                        <div class="upload-file-btn-c">
+                            <label class="upload-btn-f" for="upload-btn-f"><img width="20" height="20" src="https://img.icons8.com/fluency-systems-filled/50/upload.png" alt="upload" /> Ekle</label>
+                            <input id="upload-btn-f" class="upload-file-butn" type="file">
+                        </div>
+                    </div>
+                </div>
+                <div class="table-form ">
+                    <div class="form-first-container">
+                        İkamet Kartı
+                    </div>
+                    <div class="form-first-container-input">
+                        <div class="upload-file-btn-c">
+                            <label class="upload-btn-f" for="upload-btn-f"><img width="20" height="20" src="https://img.icons8.com/fluency-systems-filled/50/upload.png" alt="upload" /> Ekle</label>
+                            <input id="upload-btn-f" class="upload-file-butn" type="file">
+                        </div>
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Sigorta Poliçe
+                    </div>
+                    <div class="form-first-container-input">
+                        <div class="upload-file-btn-c">
+                            <label class="upload-btn-f" for="upload-btn-f"><img width="20" height="20" src="https://img.icons8.com/ios/100/zoom-in--v1.png" alt="zoom-in--v1" /> İncele</label>
+                            <input id="upload-btn-f" class="upload-file-butn" type="file">
+                        </div>
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        Randevu .pdf
+                    </div>
+                    <div class="form-first-container-input">
+                        <div class="upload-file-btn-c">
+                            <label class="upload-btn-f" for="upload-btn-f"><img width="20" height="20" src="https://img.icons8.com/fluency-systems-filled/50/upload.png" alt="upload" /> Ekle</label>
+                            <input id="upload-btn-f" class="upload-file-butn" type="file">
+                        </div>
+                    </div>
+                </div>
+               
+                
+            
+            </div>
+
+
+            
+        </div>
+        
+        <div class="table-buttons-container" style="justify-content: center; position: relative; left: 56px;">
+            
+            
+            <div class="table-button">
+                <img width="25" height="25" src="https://img.icons8.com/material-outlined/50/whatsapp.png" alt="whatsapp" />
+                WhatsApp
+            </div>
+            
+            <div class="table-button" style="width: 123px;">
+                Ana Menü
+            </div>
+        
+            <div class="table-button">
+                <img width="25" height="25" src="https://img.icons8.com/dotty/80/check-all.png" alt="check-all" /> Kaydet
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
