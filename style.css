@@ -263,8 +263,9 @@ nav ul ul ul {
     align-items: center;
     justify-content: center;
     gap: 5px;
-    
+    text-decoration: none;
     padding: 10px 15px;
+    color: #000;
     background: #fff;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
@@ -277,10 +278,7 @@ nav ul ul ul {
     background: #295477;
     color: #fff;
  }
- .table-button a {
-     text-decoration: none;
-     color: #000;
- }
+ 
  .disabled-form-i{
     color: red;
  }
