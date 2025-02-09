@@ -4,6 +4,98 @@
     font-family: "Poppins", serif;
 }
 
+nav{
+    padding: 10px 0;
+    
+    max-width: 1000px;
+    margin: auto;
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    gap: 10px;
+}
+.link-button{
+    
+    background: #fff;
+    box-shadow: 0 0 15px #29547730;
+    border: 1px solid #29547780;
+    border-radius: 12px;
+    padding: 5px 10px;
+}
+.link-button a{
+    text-decoration: none;
+    color: #000;
+}
+nav ul ul {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease-in;
+    -o-transition: all .5s ease-in;
+    -ms-transition: all .5s ease-in;
+    -moz-transition: all .5s ease-in;
+    -webkit-transition: all .5s ease-in;
+}
+nav ul li:hover > ul {
+    visibility: visible;
+    opacity: 1;
+}
+nav ul {
+    background: #295477;
+    box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
+    padding: 0 20px;
+    border-radius: 10px;
+    list-style: none;
+    position: relative;
+    z-index: 99;
+}
+nav ul:after {
+    content:"";
+    clear: both;
+    display: block;
+}
+nav ul li {
+    float: left;
+}
+nav ul li:hover {
+    background: #1881B4;
+}
+nav ul li:hover a {
+    color: #fff;
+}
+nav ul li a {
+    display: block;
+    padding: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul ul {
+    background: #295477;
+    border-radius: 0px;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+nav ul ul li {
+    float: none;
+    border-top: 1px solid #D5EEFF;
+    border-bottom: 1px solid #D5EEFF;
+    position: relative;
+}
+nav ul ul li a {
+    padding: 15px 40px;
+    color: #fff;
+}
+nav ul ul li a:hover {
+    background: #1881B4;
+}
+nav ul ul ul {
+    position: absolute;
+    left: 100%;
+    top:0;
+}
 .container-table{
     max-width: 1000px;
     margin: auto;
@@ -165,6 +257,7 @@
     padding: 20px 0;
     gap: 10px;
  }
+
  .table-button{
     display: flex;
     align-items: center;
@@ -184,7 +277,13 @@
     background: #295477;
     color: #fff;
  }
-
+ .table-button a {
+     text-decoration: none;
+     color: #000;
+ }
+ .disabled-form-i{
+    color: red;
+ }
  .table-form{
     display: flex;
     align-items: start;
@@ -308,6 +407,7 @@
 .hesapla-content{
     padding: 15px 0;
 }
+
 .name-sec{
     display: flex;
     gap: 10px;
