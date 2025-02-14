@@ -330,7 +330,7 @@ nav ul ul ul {
     outline: none;
 }
 .upload-file-btn-c{
-    width: 100px;
+    width: 120px;
 }
 .upload-btn-f{
     display: flex;
@@ -365,6 +365,10 @@ nav ul ul ul {
 .square{
     width: 64px !important;
     text-align: center;
+}
+.year{
+    padding-right: 0 !important;
+    padding-left: 0 !important;
 }
 .disabled-form{
     opacity: .5;
