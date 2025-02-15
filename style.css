@@ -292,7 +292,10 @@ nav ul ul ul {
     padding: 20px 0;
     gap: 10px;
  }
-
+.header-list a{
+    color: #000;
+    text-decoration: none;
+}
  .table-button{
     display: flex;
     align-items: center;
@@ -301,7 +304,7 @@ nav ul ul ul {
     text-decoration: none;
     padding: 10px 15px;
     color: #000;
-    background: #fff;
+    background: #e3f2ff;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
     border-radius: 12px;
