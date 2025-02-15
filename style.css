@@ -54,6 +54,7 @@ nav ul {
     list-style: none;
     position: relative;
     z-index: 99;
+    
 }
 nav ul:after {
     content:"";
@@ -113,17 +114,17 @@ nav ul ul ul {
  }
 .header-list{
     
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 0 15px #29547799;
     border-radius: 15px;
     border: 1px solid #29547780;
     text-align: center;
-    width: 550px;
+    width: 350px;
     margin: auto;
     font-weight: 500;
     font-size: 20px;
     font-style: italic;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .title-box-l{
     display: flex;
@@ -131,7 +132,7 @@ nav ul ul ul {
     justify-content: center;
     gap: 10px;
     flex: 1;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 0 15px #29547799;
     border-radius: 15px;
     border: 1px solid #29547780;
@@ -141,7 +142,7 @@ nav ul ul ul {
     font-weight: 400;
     font-size: 18px;
     font-style: italic;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 .table-name{
     display: flex;
@@ -230,8 +231,7 @@ nav ul ul ul {
 
 .table-container-fluid{
     overflow:auto;
-    
-    height: 580px;
+    height: 480px;
     padding-right: 5px;
 }
 .container-fluid{
@@ -695,4 +695,43 @@ textarea {
 .forgot {
     margin-top: -20px;
     text-align: right;
+}
+
+.sigorta-tarihi-container {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #00000099;
+    z-index: 99999;
+}
+.sigorta-tarihi-content{
+    
+    background: #fff;
+    
+    width: 500px;
+    border-radius: 14px;
+}
+.sigorta-tarihi-container_sigortabedeli {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #00000099;
+    z-index: 100000;
+}
+.sigorta-tarihi-content_sigortabedeli{
+    
+    background: #fff;
+    
+    
+    border-radius: 14px;
 }
