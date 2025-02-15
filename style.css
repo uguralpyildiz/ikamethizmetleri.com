@@ -4,6 +4,10 @@
     font-family: "Poppins", serif;
 }
 
+body{
+    backdrop-filter: blur(15px);
+}
+
 nav{
     padding: 10px 0;
     
