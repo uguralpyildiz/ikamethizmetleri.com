@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a>Hesaplar</a>
+                <ul>
+                    <li><a href="#">Yetkili Ekle</a>
+                    </li>
+                    <li><a href="#">Yetkili Listesi</a>
+                    </li>
+    
+    
+                </ul>
+            </li>
+            <li><a>Müşteri</a>
+    
+                <ul>
+                    <li><a href="musteri-ekle.html">Müşteri Ekle</a>
+                    </li>
+                    <li><a href="musteri-arama.html">Müşteri Arama</a>
+                    </li>
+                    <li><a href="musteri-listesi.html">Müşteri Listesi</a>
+                    </li>
+    
+    
+                </ul>
+            </li>
+            <li><a>İkamet</a>
+    
+                <ul>
+                    <li><a href="#">Başvuru Listesi</a>
+                    </li>
+                    <li><a href="#">Red Listesi</a>
+                    </li>
+                    <li><a href="#">Belirsizlerin Listesi</a>
+                    </li>
+    
+                </ul>
+            </li>
+            <li><a>Randevu</a>
+    
+                <ul>
+                    <li><a href="randevu-alinacak-listesi.html">Randevu Alınacak Listesi</a>
+                    <li><a href="#">Randevu PDF Ekleme Listesi</a>
+                    <li><a href="dosya-teslim-tarihi.html">Dosya Teslim Tarihi</a>
+                    <li><a href="basvuru-sonuc-listesi.html">Başvuru Sonuç Listesi</a>
+                    
+                    
+                    
+    
+    
+                </ul>
+            </li>
+            
+            <li><a>Sonuç</a>
+    
+                <ul>
+                    
+                    <li><a href="#">Olumlu Liste</a>
+                    </li>
+                    <li><a href="red-liste.html">Red Liste</a>
+                    </li>
+    
+    
+                </ul>
+            </li>
+    
+            </li>
+            <li><a>Sigorta</a>
+    
+                <ul>
+                    <li><a href="kesilecek-sigorta-police-listesi.html">Kesilecek Sigorta Poliçe Listesi</a>
+                    </li>
+                    <li><a href="#">Sigorta Listesi</a>
+                    </li>
+                    <li><a href="#">Sigorta Hesaplama</a>
+                    </li>
+                    <li><a href="#">Sigorta Poliçe Arama</a>
+                    </li>
+    
+    
+                </ul>
+            </li>
+            <li><a>Muhasebe</a>
+            </li>
+            <li><a>İletişim</a>
+            </li>
+            <li style="float: right;"><a>(Personel)</a>
+            </li>
+            
+        </ul>
+    </nav>
+    <div class="container-table" style="max-width: 1480px;">
+        <div class="header-nav-container" > 
+            <div class="title-box-l">
+                 Abdullah
+            </div>
+            <div class="header-list">
+                Başvuru Sonuç Listesi
+            </div>
+            <div class="title-box-l" >
+                Depozit: 50.000 TL
+            </div>
+            <div class="title-box-l" >
+               Bakiye: 27.400 TL
+            </div>
+        </div>
+
+        
+
+        <div class="new-table" style="padding-right: 10px; ">
+            <div class="table-list" style="margin-top: 60px; padding-bottom: 5px;">
+                <div class="table-item" style="width: 220px;">
+                    Adı<br> Soyadı
+                </div>
+               
+                <div class="wideomancho" style=" display: flex;">
+                    <div class="rotated-item">
+                        <div class="rotated-item-div">
+                            <div class="rotated-item-text" style="width: 130px; top: -53px; height: 40px">
+                                Randevu PDF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rotated-item">
+                        <div class="rotated-item-div">
+                            <div class="rotated-item-text" style="width: 130px; top: -53px; height: 40px">
+                                Sigorta PDF
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rotated-item">
+                        <div class="rotated-item-div">
+                            <div class="rotated-item-text" style="width: 130px; top: -53px; height: 40px">
+                                Red Belgesi
+                            </div>
+                        </div>
+                    </div>
+                   
+                    
+                </div>
+        
+                <div class="table-item" style="width: 160px;">
+                    Düzenleme<br> Tarihi
+                </div>
+                <div class="table-item" style="width: 180px;">
+                    Düzenleyen<br> Personel
+                </div>
+                <div class="table-item" style="width: 180px;">
+                    Kontrol Eden<br> Personel
+                </div>
+                <div class="table-item" style="width: 160px;">
+                    Poliçe<br> Fiyatı
+                </div>
+                <div class="table-item" style="width: 160px;">
+                    Alınan<br> İndirim
+                </div>
+                <div class="table-item" style="width: 160px;">
+                    İade Edilecek<br> Tutar
+                </div>
+                
+                <div class="rotated-item-div list-item" style="visibility: hidden;">
+                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                        alt="identification-documents">
+                </div>
+                
+                
+            </div>
+        
+        </div>
+        <form action="#">
+            <div class="table-container-fluid" style="height: 440px;">
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 220px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="rotated-item">
+                            
+                           
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png" alt="passport">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                    alt="identification-documents">
+                            </div>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/pdf-2.png"
+                                    alt="identification-documents">
+                            </div>
+                        </div>
+        
+                        <div class="table-item" style="width: 160px;">
+                            24.01.2005
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            melike
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            ulaş
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            %85
+                        </div>
+                        <div class="table-item" style="width: 160px;">
+                            5400
+                        </div>
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png" alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+               
+               
+                
+                
+                
+            </div>
+        </form>
+
+        
+
+        
+        <div class="table-buttons-container">
+            
+            <div class="table-button">
+                <img width="25" height="25" src="https://img.icons8.com/material-outlined/50/whatsapp.png" alt="whatsapp" />
+                WhatsApp'a Bağlan
+            </div>
+            <div class="table-button">
+                SMS Gönder
+            </div>
+            <div class="table-button">
+                Ana Sayfa
+            </div>
+        
+        
+        </div>
+    </div>
+
+    
+</body>
+</html>

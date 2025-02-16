@@ -17,17 +17,17 @@
     
     <nav>
         <ul>
-            <li><a href="#">Hesaplar</a>
+            <li><a>Hesaplar</a>
                 <ul>
-                    <li><a href="yetkili-ekle.html">Yetkili Ekle</a>
+                    <li><a href="#">Yetkili Ekle</a>
                     </li>
-                    <li><a href="yetkili-listesi.html">Yetkili Listesi</a>
+                    <li><a href="#">Yetkili Listesi</a>
                     </li>
                     
                 
                 </ul>
             </li>
-            <li><a href="#">Müşteri</a>
+            <li><a>Müşteri</a>
     
                 <ul>
                     <li><a href="musteri-ekle.html">Müşteri Ekle</a>
@@ -39,34 +39,47 @@
     
                 </ul>
             </li>
-            <li><a href="#">İkamet</a>
+            <li><a>İkamet</a>
     
                 <ul>
-                    <li><a href="basvuru-listesi.html">Başvuru Listesi</a>
+                    <li><a href="#">Başvuru Listesi</a>
                     </li>
-                    <li><a href="red-listesi.html">Red Listesi</a>
+                    <li><a href="#">Red Listesi</a>
                     </li>
-                    <li><a href="belirsizlerin-listesi.html">Belirsizlerin Listesi</a>
+                    <li><a href="#">Belirsizlerin Listesi</a>
                     </li>
     
                 </ul>
             </li>
-            <li><a href="#">Randevu</a>
+            <li><a>Randevu</a>
     
                 <ul>
-                    <li><a href="randevu-listesi.html">Randevu Listesi</a>
-                    </li>
-                    <li><a href="#">Olumlu Liste</a>
-                    </li>
-                    <li><a href="#">Red Liste</a>
-                    </li>
+                    <li><a href="randevu-alinacak-listesi.html">Randevu Alınacak Listesi</a>
+                    <li><a href="#">Randevu PDF Ekleme Listesi</a>
+                    <li><a href="dosya-teslim-tarihi.html">Dosya Teslim Tarihi</a>
+                    <li><a href="basvuru-sonuc-listesi.html">Başvuru Sonuç Listesi</a>
+                    
                    
     
                 </ul>
             </li>
     
             </li>
-            <li><a href="#">Sigorta</a>
+            <li><a>Sonuç</a>
+    
+                <ul>
+                    
+                    <li><a href="#">Olumlu Liste</a>
+                    </li>
+                    <li><a href="red-liste.html">Red Liste</a>
+                    </li>
+    
+    
+                </ul>
+            </li>
+    
+            </li>
+            <li><a>Sigorta</a>
             
                 <ul>
                     <li><a href="kesilecek-sigorta-police-listesi.html">Kesilecek Sigorta Poliçe Listesi</a>
@@ -81,16 +94,16 @@
             
                 </ul>
             </li>
-            <li><a href="#">Muhasebe</a>
+            <li><a>Muhasebe</a>
             </li>
-            <li><a href="#">İletişim</a>
+            <li><a>İletişim</a>
             </li>
-            <li style="float: right;"><a href="#">(Personel)</a>
+            <li style="float: right;"><a>(Personel)</a>
             </li>
 
         </ul>
     </nav>
-    <div class="container-table" style="max-width: 1150px;">
+    <div class="container-table" style="max-width: 1200px;">
         <div class="header-nav-container">
             <div class="title-box-l">
                 Abdullah
@@ -110,7 +123,7 @@
             <div class="table-form-container">
                 <div class="table-form">
                     <div class="form-first-container">
-                        Ad:
+                        <span class="req-st">*</span> Ad: 
                     </div>
                     <div class="form-first-container-input">
                         <input type="text" placeholder="İsim Giriniz">
@@ -118,7 +131,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        Soyad:
+                        <span class="req-st">*</span> Soyad:
                     </div>
                     <div class="form-first-container-input">
                         <input type="text" placeholder="Soyadı Giriniz">
@@ -126,7 +139,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        Anne Adı:
+                        <span class="req-st">*</span> Anne Adı:
                     </div>
                     <div class="form-first-container-input">
                         <input type="text">
@@ -134,7 +147,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        Baba Adı:
+                        <span class="req-st">*</span> Baba Adı:
                     </div>
                     <div class="form-first-container-input">
                         <input type="text">
@@ -142,7 +155,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        İkamet Türü:
+                        <span class="req-st">*</span> İkamet Türü:
                     </div>
                     <div class="form-first-container-input">
                         <select name="ikamet-izni" id="?">
@@ -174,7 +187,7 @@
 
                 <div class="table-form">
                     <div class="form-first-container">
-                        Cinsiyet:
+                        <span class="req-st">*</span> Cinsiyet:
                     </div>
                     <div class="form-first-container-input">
                         <select name="ikamet-izni" id="?">
@@ -192,11 +205,31 @@
                 
                     </div>
                 </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        <span class="req-st">*</span> Medeni Durumu:
+                    </div>
+                    <div class="form-first-container-input">
+                        <select name="ikamet-izni" id="?">
+                            <option value="">
+                                Seçiniz...
+                            </option>
+                            <option value="">
+                                Evli
+                            </option>
+                            <option value="">
+                                Bekar
+                            </option>
+                
+                        </select>
+                
+                    </div>
+                </div>
 
             
                 <div class="table-form">
                     <div class="form-first-container">
-                        Ülkesi
+                        <span class="req-st">*</span> Ülkesi
                     </div>
                     <div class="form-first-container-input">
                         <select name="ikamet-izni" id="?">
@@ -206,12 +239,20 @@
             
                     </div>
                 </div>
+                <div class="table-form">
+                    <div class="form-first-container">
+                        <span class="req-st">*</span> Pasaport No
+                    </div>
+                    <div class="form-first-container-input">
+                        <input type="text">
+                    </div>
+                </div>
             
             
                 <div class="table-form">
                     
                     <div class="form-first-container-input" >
-                        <input type="email" style="width: 350px;" placeholder="Mail Adresi">
+                        <input type="email" style="width: 380px;" placeholder="Mail Adresi Gerekli">
                     </div>
                 </div>
                 
@@ -233,7 +274,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        Doğum Tarihi:
+                    <span class="req-st">*</span> Doğum Tarihi:
                     </div>
                     <div class="form-first-container-input">
                         <input class="square" type="text" placeholder="Ay">
@@ -243,7 +284,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        Telefon No:
+                        <span class="req-st">*</span> Telefon No:
                     </div>
                     <div class="form-first-container-input ">
                         <div class="flex-phone-input">
@@ -259,7 +300,7 @@
 
                 <div class="table-form">
                     <div class="form-first-container">
-                        Adres (İl):
+                        <span class="req-st">*</span> Adres (İl):
                     </div>
                     <div class="form-first-container-input">
                         <select id="il" onchange="ilceGuncelle()">
@@ -270,7 +311,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        Adres (İlçe):
+                        <span class="req-st">*</span> Adres (İlçe):
                     </div>
                     <div class="form-first-container-input">
                         <select id="ilce">
@@ -317,7 +358,7 @@
 
                 <div class="table-form">
                     <div class="form-first-container">
-                        Adres (Mahalle):
+                        <span class="req-st">*</span> Adres (Mahalle):
                     </div>
                     <div class="form-first-container-input">
                         <input type="text" name="" id="">
@@ -326,7 +367,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        Adres (Sokak):
+                        <span class="req-st">*</span> Adres (Sokak):
                     </div>
                     <div class="form-first-container-input">
                         <input type="text" name="" id="">
@@ -335,7 +376,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        Adres (Kat & Dairesi):
+                    <span class="req-st">*</span> Adres (Kat & Dairesi):
                     </div>
                     <div class="form-first-container-input">
                         <input type="text" name="" id="">
@@ -364,7 +405,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        Pasaport
+                    <span class="req-st">*</span> Pasaport
                     </div>
                     <div class="form-first-container-input">
                         <div class="upload-file-btn-c">
@@ -376,7 +417,7 @@
                 </div>
                 <div class="table-form">
                     <div class="form-first-container">
-                        Fotoğraf
+                    <span class="req-st">*</span> Fotoğraf
                     </div>
                     <div class="form-first-container-input">
                         <div class="upload-file-btn-c">
@@ -431,7 +472,7 @@
             
         </div>
         
-        <div class="table-buttons-container" style="justify-content: center; position: relative; left: 6px;">
+        <div class="table-buttons-container" style="justify-content: center; position: relative;top: -130px; left: 15px;">
             
             
             <div class="table-button">
