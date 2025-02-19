@@ -6,6 +6,7 @@
 
 body{
     backdrop-filter: blur(15px);
+    transform: scale(1);
 }
 
 nav{
