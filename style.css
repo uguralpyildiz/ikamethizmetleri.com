@@ -331,6 +331,33 @@ nav ul ul ul {
     border-radius: 15px;
     padding: 25px;
  }
+ .yetkili-ekle{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+     background: #fff;
+    box-shadow: 0 0 15px #29547730;
+    border: 1px solid #29547780;
+    width: auto;
+    border-radius: 15px;
+    padding: 25px;
+ }
+ .yetkili-ekle .form-first-container{
+    width: 173px;
+ }
+ .yetkili-ekle .form-first-container-input{
+    width: 200px;
+ }
+ .yetkili-ekle .form-first-container-input input{
+    width: 100% !important;
+ }
+ .yetkili-ekle .flex-phone-input{
+    display: flex;
+    width: 200px;
+ }
+ 
  .table-button:hover{
     background: #295477;
     color: #fff;
