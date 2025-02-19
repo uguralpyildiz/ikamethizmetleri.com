@@ -86,8 +86,13 @@
                     </div>
 
                     <a style="font-size: 18px; text-align: center; text-decoration: none;"
-                        href="danisman/musteri-listesi.html"  class="button button-block">Kayıt Ol</a>
+                        href="danisman/musteri-listesi.html" onclick="openPopup('danisman/musteri-listesi.html'); return false;" class="button button-block">Kayıt Ol</a>
 
+                        <script>
+                            function openPopup(url) {
+                                window.open(url, 'popupWindow', 'width=1050,height=750,resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no,directories=no');
+                            }
+                        </script>
                 </form>
 
             </div>
@@ -239,6 +244,7 @@
         });
 
     </script>
+<script src="../script.js"></script>
 </body>
 
 </html>

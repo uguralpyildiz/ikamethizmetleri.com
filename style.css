@@ -7,6 +7,7 @@
 body{
     backdrop-filter: blur(15px);
     transform: scale(1);
+    transition: .8s ease all;
 }
 
 nav{
@@ -749,3 +750,5 @@ textarea {
 .req-st{
     color: red;
 }
+
+
