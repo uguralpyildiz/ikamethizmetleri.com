@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a>Personel</a>
+                <ul>
+                    <li><a href="yetkili-ekle.html">Personel Oluştur</a></li>
+                    <li><a href="yetkili-listesi.html">Personel Listesi</a>
+                    </li>
+                    <li><a href="#">Personel Yetkilendirme</a>
+                    </li>
+
+                    <li><a href="#">Personel Karaliste</a></li>
+
+                    <li><a href="#">Randevu Personeli Oluşturma</a>
+                    </li>
+
+
+                </ul>
+            </li>
+            <li><a>Müşteri</a>
+
+                <ul>
+                    <li><a href="musteri-ekle.html">Müşteri Ekle</a>
+                    </li>
+                    <li><a href="musteri-listesi.html">Müşteri Listesi</a>
+                    </li>
+                    <li><a href="musteri-arama.html">Müşteri Arama</a>
+                    </li>
+
+                    <li><a href="karaliste.html">Karaliste</a>
+                    </li>
+                    <li><a href="anlasmazlik-listesi.html">Anlaşmazlık Listesi</a>
+                    </li>
+                    <li><a href="#">Süresi Geçenlerin Listesi</a>
+                    </li>
+
+
+                </ul>
+            </li>
+
+            <li><a>Randevu</a>
+
+                <ul>
+                    <li><a href="musteri-listesi.html">Müşteri Listesi</a>
+                    </li>
+
+                    <li><a href="randevu-alinacak-listesi.html">Randevu Alınacak Listesi</a>
+                    <li><a href="randevu-pdf-eklenecek-liste.html">Randevu PDF Ekleme Listesi</a>
+                    <li><a href="#">Randevu Günü Eklenecek Liste (27)</a>
+                    <li><a href="dosya-teslim-tarihi.html">Dosya Teslim Tarihi</a>
+                    <li><a href="#">Teslim Edilen Dosya Listesi</a>
+                    <li><a href="#">Randevu Hesaplama Robotu</a>
+
+
+
+
+
+
+                </ul>
+            </li>
+
+            <li><a>Randevu Takip</a>
+
+                <ul>
+
+
+                    <li><a href="ikamet-sonucu-girilecek-liste.html">İkamet Sonucu Girilecek Liste</a>
+                    </li>
+                    <li><a href="olumlu-liste.html">Olumlu Liste</a>
+                    </li>
+                    <li><a href="red-liste.html">Red Liste</a>
+                    </li>
+                    <li><a href="basvuru-sonuc-listesi.html">Başvuru Sonuç Listesi</a>
+                    <li><a href="#">Alınan Randevu Listesi</a>
+                    <li><a href="#">Sonuç Sorgulama</a>
+                    <li><a href="#">Belirsiz Liste</a>
+
+
+                </ul>
+            </li>
+
+            </li>
+            <li><a>Sigorta</a>
+
+                <ul>
+                    <li><a href="#">Sigorta Kes</a>
+                    </li>
+                    <li><a href="#">Kesilen Sigorta Poliçesi</a>
+                    </li>
+                    <li><a href="kesilecek-sigorta-police-listesi.html">Kesilecek Sigorta Poliçe Listesi s</a>
+                    </li>
+                    <li><a href="#">Sigorta Listesi</a>
+                    </li>
+                    <li><a href="#">Sigorta Hesaplama Robotu</a>
+                    </li>
+                    <li><a href="#">Sigorta Poliçe Arama</a>
+                    </li>
+
+
+                </ul>
+            </li>
+            <li><a>Muhasebe</a>
+                <ul>
+                    <li><a href="#">Ödeme Bildirim Formu</a></li>
+                    <li><a href="#">Ödeme Listesi</a></li>
+
+
+
+                </ul>
+            </li>
+            <li><a>İletişim</a>
+            </li>
+
+            <li style="float: right;"><a>Menü (Danışman)</a>
+
+                <ul>
+                    <li><a href="../admin/index.html">Admin Girişi</a>
+                    </li>
+
+                    <li><a href="../sigortaci/index.html">Sigortacı Girişi</a>
+                    </li>
+
+                </ul>
+            </li>
+
+
+        </ul>
+    </nav>
+    <div class="container-table" style="max-width: 1260px;">
+        <div class="header-nav-container">
+            <div class="title-box-l">
+                Abdullah
+            </div>
+            <div class="header-list">
+                Karaliste
+            </div>
+            <div class="title-box-l">
+                Depozit: 50.000 TL
+            </div>
+            <div class="title-box-l">
+                Bakiye: 27.400 TL
+            </div>
+        </div>
+
+        <div class="new-table" style="padding-right: 10px; ">
+            <div class="table-list" style="margin-top: 90px; padding-bottom: 15px;">
+                <div class="table-item" style="width: 180px;">
+                    Adı Soyadı
+                </div>
+
+
+                <div class="table-item" style="width: 150px;">
+                    Telefon No
+                </div>
+                <div class="table-item" style="width: 130px;">
+                    Ülkesi
+                </div>
+                <div class="table-item" style="width: 130px;">
+                    Personel
+                </div>
+                <div class="table-item" style="width: 155px;">
+                    İşlem Tarihi
+                </div>
+                <div class="table-item" style="width: 180px;">
+                    Açıklama
+                </div>
+                <div class="table-item" style="width: 80px;">
+                    Detaylar
+                </div>
+                <div class="table-item" style="width: 145px;">
+                    Kategori Seç
+                </div>
+
+                <div class="rotated-item-div list-item" style="visibility: hidden;">
+                    <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                        alt="identification-documents">
+                </div>
+
+
+            </div>
+
+        </div>
+        <form action="#">
+            <div class="table-container-fluid" style="height: 440px;">
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        <div class="table-item" style="width: 180px;">
+                            Uğur Alp Yıldız
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Türkiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Mehmet
+                        </div>
+                        <div class="table-item" style="width: 155px;">
+                            16.05.1999
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Açıklama
+                        </div>
+                        <div class="table-item" style="width: 80px;">
+                            Detaylar
+                        </div>
+                        
+                        <div class="table-item select-item" style="width: 145px;">
+                            <select name="ikamet-izni" id="?">
+                                <option value="">
+                                    Kategori
+                                </option>
+                                <option value="">
+                                    Kategori 1
+                                </option>
+                                <option value="">
+                                    Kategori 2
+                                </option>
+
+                            </select>
+                        </div>
+                       
+                        <div class="rotated-item-div list-item">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+
+                </div>
+                
+
+
+
+
+            </div>
+        </form>
+
+
+
+
+        <div class="table-buttons-container">
+
+            <div class="table-button">
+                <img width="25" height="25" src="https://img.icons8.com/material-outlined/50/whatsapp.png"
+                    alt="whatsapp" />
+                WhatsApp'a Bağlan
+            </div>
+            <div class="table-button">
+                SMS Gönder
+            </div>
+            <div class="table-button">
+                Ana Sayfa
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <script src="../script.js"></script>
+</body>
+
+</html>
