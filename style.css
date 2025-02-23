@@ -35,6 +35,25 @@ nav{
     text-decoration: none;
     color: #000;
 }
+.aktif{
+    background: rgb(255, 196, 0);
+    color: #000 !important;
+}
+.eksi{
+    color:red ;
+}
+.table-item-status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.table-item-status span{
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 15px #29547730;
+    border: 1px solid #29547780;
+    width: 32%;
+}
 nav ul ul {
     opacity: 0;
     visibility: hidden;
@@ -215,7 +234,11 @@ nav ul ul ul {
 .list-item{
     height: 40px;
     width: 40px;
+    border: 1px solid #29547780;
     margin: 0 5px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #29547730;
    padding: 7px;
 }
 .table-item:hover{
@@ -232,7 +255,6 @@ nav ul ul ul {
 .list-table{
     padding: 3px 0;
     border-radius: 15px;
-    margin-top: 5px;
     box-shadow: 0 0 15px #29547730;
 }
 
@@ -783,3 +805,38 @@ textarea {
 }
 
 
+#bankname{
+    height: 43px;
+}
+#aliciadi{
+    height: 43px;
+}
+#iban{
+    height: 43px;
+}
+#havale{
+    height: 43px;
+}
+.container-bank-detail{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    max-width: 1280px;
+    gap: 20px;
+    margin: auto;
+}
+
+.form-bank{
+    background: #fff;
+    box-shadow: 0 0 15px #29547730;
+    border: 1px solid #29547780;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 25px;
+    width: 300px;
+}
+
+.form-bank input,.form-bank select{
+    font-size: 16px;
+    margin-bottom:10px ;
+}
