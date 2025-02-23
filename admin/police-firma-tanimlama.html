@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +13,10 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
+
 <body>
 
-    
+
 
 
     <nav>
@@ -31,7 +33,7 @@
                     </li>
                 </ul>
             </li>
-            
+    
             <li><a>Randevu</a>
                 <ul>
                     <li><a class="aktif" href="#">Alınan Randevu Listesi</a></li>
@@ -41,14 +43,14 @@
                     <li><a class="aktif" href="#">Randevu Hesaplama Robotu</a></li>
                 </ul>
             </li>
-
+    
             <li><a>Sigorta</a>
                 <ul>
                     <li><a class="aktif" href="#">Ödeme Bekleyen Liste</a></li>
                     <li><a class="aktif" href="#">Ödemesi Yapılmış Sigortalar</a></li>
                 </ul>
             </li>
-
+    
             <li><a>Tanımlama</a>
                 <ul>
                     <li><a href="banka-tanimlama.html">Banka Tanımlama</a></li>
@@ -65,10 +67,10 @@
                             <li><a href="#" class="alt-li aktif">Ülke Grup Birleştirme</a></li>
                         </ul>
                     </li>
-                    
+    
                 </ul>
             </li>
-
+    
             <li><a>Muhasebe</a>
                 <ul>
                     <li><a class="aktif">Randevu Personel Muhasebe</a>
@@ -96,9 +98,9 @@
                     </li>
                 </ul>
             </li>
-
-            
-
+    
+    
+    
             <li><a>Sabitler</a>
                 <ul>
                     <li><a href="#" class="alt-li aktif">Müşteri Komisyon Listesi</a></li>
@@ -107,39 +109,177 @@
                     <li><a href="#" class="alt-li aktif">Banka Hesap Tanımlama</a></li>
                 </ul>
             </li>
-            
-
+    
+    
             <li style="float: right;"><a>Menü (Admin)</a>
-            
+    
                 <ul>
                     <li><a href="../danisman/musteri-listesi.html">Danışman Girişi</a>
                     </li>
-                    
+    
                     <li><a href="../sigortaci/index.html">Sigortacı Girişi</a>
                     </li>
-                    
+    
                 </ul>
             </li>
-            
-
+    
+    
         </ul>
     </nav>
     <div class="container-table">
         <div class="header-nav-container">
-            <div class="title-box-l">
-                 Admin
+           
+            <div class="header-list" style="width: 390px;">
+                Poliçe Firma Tanımlama
             </div>
+          
             
         </div>
 
+        </div>
+    <div class="container-bank-details">
         
-      
+        <div class="form-bank">
+
+
+            Poliçe Firma İsmi Giriniz <input type="text">
+            
+            <div class="table-buttons-container">
+        
+                <div onclick="addTable()" class="table-button">
+                    Kaydet
+                </div>
+                <div class="table-button">
+                    Ana Sayfa
+                </div>
         
         
+            </div>
+        </div>
+       <div class="container-text-shadow" style="width: 640px;">
+        <div class="new-table" style="padding-right: 10px;">
+            <div class="table-list" style="margin-top: 25px; padding-bottom: 20px;">
+                <div class="table-item" style="width: 500px;">
+                    Sigorta Poliçe Firma İsmi Listesi
+                </div>
+                
+                
+        
+            </div>
+        
+        </div>
+        <form action="#">
+            <div class="table-container-fluid">
+                <div class="list-table">
+                    <div class="table-list">
+                        <div class="table-item" style="width: 500px;">
+                            Ankara Sigorta
+                        </div>
+                        <div class="table-item" style="width: 100px;">
+                            Sil 
+                        </div>
+                        
+                    </div>
+                </div>
+               
+            
+                
+              
+                
+                
+               
+            </div>
+        
+        </form>
+       </div>
     </div>
 
-    
+   
 
-<script src="../script.js"></script>
+<script>
+    function addTable() {
+            const bankname = document.getElementById('input-bankname').value;
+            const aliciadi = document.getElementById('input-aliciadi').value;
+            const iban = document.getElementById('input-iban').value;
+            const havale = document.getElementById('input-havale').value;
+
+            const tableContainer = document.querySelector('.table-container-fluid');
+            const newTable = document.createElement('div');
+            newTable.classList.add('new-table');
+            newTable.innerHTML = `
+                <div class="list-table">
+                    <div class="table-list">
+                        <div id="bankname" class="table-item" style="width: 150px;">${bankname}</div>
+                        <div id="aliciadi" class="table-item" style="width: 150px;">${aliciadi}</div>
+                        <div id="iban" class="table-item" style="width: 250px;">${iban}</div>
+                        <div id="havale" class="table-item" style="width: 150px;">${havale} TL</div>
+                        <div class="table-item table-item-status" style="width: 200px;">
+                            <span>Açık</span>
+                            <span>Kapalı</span>
+                            <span onclick="this.parentElement.parentElement.parentElement.remove()">Sil</span>
+                        </div>
+                    </div>
+                </div>
+            `;
+            tableContainer.appendChild(newTable);
+            document.getElementById('input-bankname').selectedIndex = 0;
+            document.getElementById('input-aliciadi').value = "";
+            document.getElementById('input-iban').value = "TR";
+            document.getElementById('input-havale').value = "";
+        }
+</script>
+
+    </div>
+
+   
+    <script>
+        const calc_btn = document.querySelectorAll(".calc-bot")
+        const modalBox = document.querySelector(".modal-overlay")
+        const modalBoxC = document.querySelector(".close-modalbox")
+
+        for (let i = 0; i < calc_btn.length; i++) {
+            calc_btn[i].addEventListener("click", () => {
+                modalBox.style.display = "flex"
+            })
+
+        }
+        modalBoxC.addEventListener("click", () => {
+            modalBox.style.display = "none"
+        })
+
+
+        const calc_btn_sigorta = document.querySelectorAll(".calc-bot_sigorta")
+        const modalBox_sigorta = document.querySelector(".modal-overlay_sigorta")
+        const modalBoxC_sigorta = document.querySelector(".close-modalbox_sigorta")
+
+        for (let i = 0; i < calc_btn_sigorta.length; i++) {
+            calc_btn_sigorta[i].addEventListener("click", () => {
+                modalBox_sigorta.style.display = "flex"
+            })
+
+        }
+        modalBoxC_sigorta.addEventListener("click", () => {
+            modalBox_sigorta.style.display = "none"
+            modalBox.style.display = "none"
+        })
+        const calc_btn_sigorta_bedeli = document.querySelectorAll(".calc-bot_sigorta_bedeli")
+        const modalBox_sigorta_bedeli = document.querySelector(".modal-overlay_sigorta_bedeli")
+        const modalBoxC_sigorta_bedeli = document.querySelector(".close-modalbox_sigorta_bedeli")
+
+        for (let i = 0; i < calc_btn_sigorta_bedeli.length; i++) {
+            calc_btn_sigorta_bedeli[i].addEventListener("click", () => {
+                modalBox_sigorta_bedeli.style.display = "flex"
+            })
+
+        }
+        modalBoxC_sigorta_bedeli.addEventListener("click", () => {
+            modalBox_sigorta_bedeli.style.display = "none"
+            modalBox.style.display = "none"
+        })
+
+    </script>
+
+    <script src="../script.js"></script>
 </body>
+
 </html>
