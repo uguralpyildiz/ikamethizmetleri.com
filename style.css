@@ -516,11 +516,12 @@ nav ul ul ul {
 }
 .flex-items-warranty-card-item-porfessional-s2{
     display: flex;
-    align-items: center;
+    align-items: start;
     justify-content: space-between;
+    gap: 20px;
 }
 .flex-items-warranty-card-item-porfessional-s2 .pro-container-start{
-    width: 48%;
+    width: 50%;
 }
 .modal-box{
     width: 600px;
