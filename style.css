@@ -7,6 +7,7 @@
 body{
     backdrop-filter: blur(15px);
     transform: scale(1);
+    background: #fff7dc;
     transition: .8s ease all;
 }
 

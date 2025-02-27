@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a>Üyelikler</a>
+                <ul>
+                    <li><a class="aktif">Müşteriler</a>
+                        <ul>
+                            <li><a href="#" class="alt-li aktif">Danışman Listesi</a></li>
+                            <li><a href="#" class="alt-li aktif">Sigortacı Listesi</a></li>
+                            <li><a href="#" class="alt-li aktif">Randevu Personel Listesi</a></li>
+                            <li><a href="#" class="alt-li aktif">Firma Arama</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+    
+            <li><a>Randevu</a>
+                <ul>
+                    <li><a href="alinan-randevu-listesi.html">Alınan Randevu Listesi</a></li>
+                    <li><a class="aktif" href="#">Red Listesi</a></li>
+                    <li><a class="aktif" href="#">Olumlu Liste</a></li>
+                    <li><a class="aktif" href="#">Belirsiz Liste</a></li>
+                    <li><a class="aktif" href="#">Randevu Hesaplama Robotu</a></li>
+                </ul>
+            </li>
+    
+            <li><a>Sigorta</a>
+                <ul>
+                    <li><a class="aktif" href="#">Ödeme Bekleyen Liste</a></li>
+                    <li><a class="aktif" href="#">Ödemesi Yapılmış Sigortalar</a></li>
+                </ul>
+            </li>
+    
+            <li><a>Tanımlama</a>
+                <ul>
+                    <li><a href="banka-tanimlama.html">Banka Tanımlama</a></li>
+                    <li><a>Sigorta</a>
+                        <ul>
+                            <li><a href="sigorta-firma-tanimlama.html" class="alt-li">Sigorta Firma Tanımlama</a></li>
+                            <li><a href="police-firma-tanimlama.html" class="alt-li">Poliçe Firma Tanınmlama</a></li>
+                            <li><a href="sigorta-birlestirme.html" class="alt-li">Poliçe Eşleştirme</a></li>
+                        </ul>
+                    </li>
+                    <li><a>Ülke & Harçlar</a>
+                        <ul>
+                            <li><a href="ulke-tanimlama.html" class="alt-li">Ülke Tanımlama</a></li>
+                            <li><a href="ulke-eslestirme.html" class="alt-li">Ülke Eşleştirme</a></li>
+                        </ul>
+                    </li>
+    
+                </ul>
+            </li>
+    
+            <li><a>Muhasebe</a>
+                <ul>
+                    <li><a class="aktif">Randevu Personel Muhasebe</a>
+                        <ul>
+                            <li><a href="#" class="alt-li aktif">Onay Bekleyen Ödemeler</a></li>
+                            <li><a href="#" class="alt-li aktif">Ödeme Listesi</a></li>
+                            <li><a href="#" class="alt-li aktif">Hakedişler</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="aktif">Danışman. Muhasebe</a>
+                        <ul>
+                            <li><a href="#" class="alt-li aktif">Onay Bekleyen Ödemeler</a></li>
+                            <li><a href="#" class="alt-li aktif">Ödeme Listesi</a></li>
+                            <li><a href="#" class="alt-li aktif">Kesilen Sigorta Listesi</a></li>
+                            <li><a href="#" class="alt-li aktif">Onaylanmış Liste</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="aktif">Sigorta Muhasebe</a>
+                        <ul>
+                            <li><a href="#" class="alt-li aktif">Onay Bekleyen Ödemeler</a></li>
+                            <li><a href="#" class="alt-li aktif">Ödeme Listesi</a></li>
+                            <li><a href="#" class="alt-li aktif">Kesilen Sigorta Listesi</a></li>
+                            <li><a href="#" class="alt-li aktif">Onaylanmış Liste</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+    
+    
+    
+            <li><a>Sabitler</a>
+                <ul>
+                    <li><a href="#" class="alt-li aktif">Müşteri Komisyon Listesi</a></li>
+                    <li><a href="#" class="alt-li aktif">Mesaj</a></li>
+                    <li><a href="#" class="alt-li aktif">Sabit Veriler</a></li>
+                    <li><a href="#" class="alt-li aktif">Banka Hesap Tanımlama</a></li>
+                </ul>
+            </li>
+    
+    
+            <li style="float: right;"><a>Menü (Admin)</a>
+    
+                <ul>
+                    <li><a href="../danisman/musteri-listesi.html">Danışman Girişi</a>
+                    </li>
+    
+                    <li><a href="../sigortaci/index.html">Sigortacı Girişi</a>
+                    </li>
+    
+                </ul>
+            </li>
+    
+    
+        </ul>
+    </nav>
+    <div class="container-table" style="max-width: 1380px;">
+        <div class="header-nav-container" > 
+            <div class="title-box-l">
+                 Abdullah
+            </div>
+            <div class="header-list">
+                Alınan Randevu Listesi
+            </div>
+            <div class="title-box-l" >
+                27.02.2025
+            </div>
+           
+        </div>
+
+        <div class="new-table" style="padding-right: 10px; padding-bottom: 10px;">
+            <div class="table-list" style="margin-top: 80px; padding-bottom: 5px;">
+                <div class="table-item" style="width: 180px;">
+                    Müşteri<br> Adı Soyadı
+                </div>
+                <div class="table-item" style="width: 170px;">
+                    Rndv. Başvuru<br> Numarası
+                </div>
+                <div class="table-item" style="width: 150px;">
+                    Pasaport<br> Numarası
+                </div>
+                <div class="table-item" style="width: 150px;">
+                    Telefon<br>Numarası
+                </div>
+                <div class="table-item" style="width: 120px;">
+                    Doğum<br> Tarihi
+                </div>
+                
+                <div class="table-item" style="width: 150px;">
+                    Danışmanlık<br> Firması
+                </div>
+                <div class="wideomancho" style="width: 97px; display: flex;">
+                    <div class="rotated-item">
+                        <div class="rotated-item-div">
+                            <div class="rotated-item-text" style="width: 130px; top: -52px; height: 40px">
+                                Detaylar
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="rotated-item">
+                        <div class="rotated-item-div">
+                            <div class="rotated-item-text" style="width: 130px; top: -52px; height: 40px">
+                                Randevu PDF
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+        
+                <div class="table-item" style="width: 160px;">
+                    Sonuç<br>Seçiniz
+                </div>
+                <div class="table-item" style="width: 100px;">
+                    PDF<br> Ekle
+                </div>
+                
+                
+                <div class="rotated-item-div list-item" style="font-size: 13px; visibility: hidden;">
+                    <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                        alt="identification-documents">
+                </div>
+            </div>
+        
+        </div>
+        <form action="#">
+            <div class="table-container-fluid" style="height: 440px;">
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+                <div class="new-table">
+                    <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
+                        
+                        <div class="table-item" style="width: 180px;">
+                            Umut Yıldızhan
+                        </div>
+                        <div class="table-item" style="width: 170px;">
+                            2025-42-0131446
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            151322
+                        </div>
+                        <div class="table-item" style="width: 150px;">
+                            05392983507
+                        </div>
+                        <div class="table-item" style="width: 120px;">
+                            26.02.2002
+                        </div>
+                        
+                        <div class="table-item" style="width: 150px;">
+                            Falan Firma
+                        </div>
+
+                        <div class="rotated-item">
+                            <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png" alt="search-more">
+                            </a>
+                            <div class="rotated-item-div list-item">
+                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                    alt="stack-of-photos">
+                            </div>
+                           
+                            
+                        </div>
+                        <select class="table-item" style="width: 160px; font-size: 14px;">
+                           
+                                <option value="">Olumlu / Olumsuz</option>
+                            
+                        </select>
+                        <div class="table-item" style="width: 100px;">
+                            PDF Ekle
+                        </div>
+                        <div class="rotated-item-div list-item" style="font-size: 13px;">
+                            <img width="50" height="50" src="https://img.icons8.com/ios/100/instagram-check-mark.png"
+                                alt="identification-documents">
+                        </div>
+                    </div>
+        
+                </div>
+               
+                
+                
+            </div>
+        </form>
+
+        
+
+        
+        <div class="table-buttons-container">
+            
+            <div class="table-button">
+                <img width="25" height="25" src="https://img.icons8.com/material-outlined/50/whatsapp.png" alt="whatsapp" />
+                WhatsApp'a Bağlan
+            </div>
+            <div class="table-button">
+                SMS Gönder
+            </div>
+            <div class="table-button">
+                Ana Sayfa
+            </div>
+        
+        
+        </div>
+    </div>
+
+    
+<script src="../script.js"></script>
+</body>
+</html>
