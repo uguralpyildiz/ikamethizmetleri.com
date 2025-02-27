@@ -433,6 +433,14 @@ nav ul ul ul {
     border-radius: 12px;
     
  }
+ .form-first-container-input-delete{
+    padding: 10px 15px;
+        background: #fff;
+        font-size: 16px;
+        box-shadow: 0 0 15px #29547730;
+        border: 1px solid #29547780;
+        border-radius: 12px;
+ }
 .form-first-container-input input, .form-first-container-input select, .upload-file-btn-c{
     
     width: 200px;
