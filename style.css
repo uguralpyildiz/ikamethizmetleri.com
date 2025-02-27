@@ -33,7 +33,7 @@ nav{
 }
 .square-team-squads{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     flex-direction: column;
     
     border-radius: 15px;
