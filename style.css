@@ -31,6 +31,16 @@ nav{
     border-radius: 12px;
     padding: 5px 10px;
 }
+.square-team-squads{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    
+    border-radius: 15px;
+    border: 1px solid #29547780;
+    background: #00000020;
+    padding: 7px;
+}
 .link-button a{
     text-decoration: none;
     color: #000;
