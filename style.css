@@ -253,7 +253,7 @@ nav ul ul ul {
     width: 40px;
     border: 1px solid #29547780;
     margin: 0 5px;
-    background: #ffffff;
+    background: #00000020;
     border-radius: 10px;
     box-shadow: 0 0 15px #29547730;
    padding: 7px;
@@ -325,13 +325,13 @@ nav ul ul ul {
 
 
  ::-webkit-scrollbar-track {
-     background: #f1f1f1;
+     background: #00000020;
      width: 5px;
  }
 
  
  ::-webkit-scrollbar-thumb {
-     background: #295477;
+     background: #00000060;
      border-radius: 5px;
  }
 
@@ -361,7 +361,7 @@ nav ul ul ul {
     text-decoration: none;
     padding: 10px 15px;
     color: #000;
-    background: #e3f2ff;
+    background: #00000020;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
     border-radius: 12px;

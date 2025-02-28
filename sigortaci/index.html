@@ -111,4 +111,97 @@
 
 <script src="../script.js"></script>
 </body>
+<div class="buttoninput" id="buttoninput">
+    <div class="buttoninput-content">
+        <div class="span-in" id="decrease">-</div>
+        <input type="text" id="percentageInput" value="100%" />
+        <div class="span-in" id="increase">+</div>
+    </div>
+</div>
+<script>
+    const body = document.querySelector("body");
+    const percentageInput = document.getElementById("percentageInput");
+    const decreaseButton = document.getElementById("decrease");
+    const increaseButton = document.getElementById("increase");
+    const buttonInput = document.getElementById("buttoninput");
+
+    // localStorage'den zoom değeri al, yoksa 1 (100%) olarak ayarla
+    let zoomValue = parseFloat(localStorage.getItem("zoomValue")) || 1;
+
+    function updateZoom() {
+        body.style.zoom = zoomValue;
+        percentageInput.value = `${Math.round(zoomValue * 100)}%`;
+        // Zoom değeri localStorage'e kaydedilsin
+        localStorage.setItem("zoomValue", zoomValue);
+    }
+
+    decreaseButton.addEventListener("click", () => {
+        if (zoomValue > 0.5) {
+            zoomValue -= 0.01;
+            updateZoom();
+        }
+    });
+
+    increaseButton.addEventListener("click", () => {
+        if (zoomValue < 1.25) { // %125 sınırı
+            zoomValue += 0.01;
+            updateZoom();
+        }
+    });
+
+    updateZoom();
+
+    document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "m") {
+            if (buttonInput.style.display === "none" || buttonInput.style.display === "") {
+                buttonInput.style.display = "flex";
+            } else {
+                buttonInput.style.display = "none";
+            }
+        }
+    });
+
+    percentageInput.addEventListener("blur", () => {
+        let value = parseFloat(percentageInput.value);
+        if (!isNaN(value) && value >= 50 && value <= 125) { // %125 sınırı
+            zoomValue = value / 100;
+            updateZoom();
+        } else {
+            percentageInput.value = `${Math.round(zoomValue * 100)}%`;
+        }
+    });
+
+    percentageInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            let value = parseFloat(percentageInput.value);
+            if (!isNaN(value) && value >= 50 && value <= 125) { // %125 sınırı
+                zoomValue = value / 100;
+                updateZoom();
+            } else {
+                percentageInput.value = `${Math.round(zoomValue * 100)}%`;
+            }
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "+") {
+            if (zoomValue < 1.25) { // %125 sınırı
+                zoomValue += 0.01;
+                updateZoom();
+            }
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "-") {
+            if (zoomValue > 0.5) {
+                zoomValue -= 0.01;
+                updateZoom();
+            }
+        }
+    });
+</script>
+
+
+
 </html>
