@@ -905,7 +905,7 @@ textarea {
     display: none;
     align-items: center;
     justify-content: center;
-    
+    z-index: 999;
 }
 
 #percentageInput {

@@ -826,11 +826,14 @@
     const increaseButton = document.getElementById("increase");
     const buttonInput = document.getElementById("buttoninput");
 
-    let zoomValue = 1;
+    // localStorage'den zoom değeri al, yoksa 1 (100%) olarak ayarla
+    let zoomValue = parseFloat(localStorage.getItem("zoomValue")) || 1;
 
     function updateZoom() {
         body.style.zoom = zoomValue;
         percentageInput.value = `${Math.round(zoomValue * 100)}%`;
+        // Zoom değeri localStorage'e kaydedilsin
+        localStorage.setItem("zoomValue", zoomValue);
     }
 
     decreaseButton.addEventListener("click", () => {
@@ -841,7 +844,7 @@
     });
 
     increaseButton.addEventListener("click", () => {
-        if (zoomValue < 2) {
+        if (zoomValue < 1.25) { // %125 sınırı
             zoomValue += 0.01;
             updateZoom();
         }
@@ -861,7 +864,7 @@
 
     percentageInput.addEventListener("blur", () => {
         let value = parseFloat(percentageInput.value);
-        if (!isNaN(value) && value >= 50 && value <= 200) {
+        if (!isNaN(value) && value >= 50 && value <= 125) { // %125 sınırı
             zoomValue = value / 100;
             updateZoom();
         } else {
@@ -872,7 +875,7 @@
     percentageInput.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
             let value = parseFloat(percentageInput.value);
-            if (!isNaN(value) && value >= 50 && value <= 200) {
+            if (!isNaN(value) && value >= 50 && value <= 125) { // %125 sınırı
                 zoomValue = value / 100;
                 updateZoom();
             } else {
@@ -883,7 +886,7 @@
 
     document.addEventListener("keydown", (e) => {
         if (e.ctrlKey && e.key === "+") {
-            if (zoomValue < 2) {
+            if (zoomValue < 1.25) { // %125 sınırı
                 zoomValue += 0.01;
                 updateZoom();
             }
@@ -899,5 +902,7 @@
         }
     });
 </script>
+
+
 
 </html>
