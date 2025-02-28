@@ -26,7 +26,7 @@ nav{
 }
 .link-button{
     
-    background: #fff;
+    background: #fff7dc;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
     border-radius: 12px;
@@ -59,7 +59,7 @@ nav{
     justify-content: space-between;
 }
 .table-item-status span{
-    background: #fff;
+    background: #fff7dc;
     border-radius: 5px;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
@@ -79,33 +79,38 @@ nav ul li:hover > ul {
     opacity: 1;
 }
 nav ul {
-    background: #295477;
+    background: #00000020;
     box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.15);
     padding: 0 20px;
     border-radius: 10px;
+    border: 1px solid #29547780;
     list-style: none;
     position: relative;
     z-index: 99;
-    
+    font-style: italic;
 }
 nav ul:after {
     content:"";
     clear: both;
     display: block;
 }
+*{
+    font-style: italic;
+    font-family: "Poppins", serif;
+}
 nav ul li {
     float: left;
 }
 nav ul li:hover {
-    background: #1881B4;
+    background: #fff7dc;
 }
 nav ul li:hover a {
-    color: #fff;
+    color: #000;
 }
 nav ul li a {
     display: block;
     padding: 20px;
-    color: #ffffff;
+    color: #000;
     text-decoration: none;
     cursor: pointer;
     
@@ -114,16 +119,17 @@ nav ul li a {
     width: 300px;
 }
 nav ul ul {
-    background: #295477;
+    background: #fff7dc;
     border-radius: 0px;
     padding: 0;
+    font-style: italic;
     position: absolute;
     top: 100%;
 }
 nav ul ul li {
     float: none;
-    border-top: 1px solid #D5EEFF;
-    border-bottom: 1px solid #D5EEFF;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
     position: relative;
 }
 nav ul ul li a {
@@ -131,7 +137,7 @@ nav ul ul li a {
     color: #fff;
 }
 nav ul ul li a:hover {
-    background: #1881B4;
+    background: #ccc;
 }
 nav ul ul ul {
     position: absolute;
@@ -200,7 +206,7 @@ nav ul ul ul {
 .table-item{
     text-align: center;
     padding: 8px 5px;
-    background: #fff;
+    background: #fff7dc;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
     border-radius: 12px;
@@ -232,7 +238,7 @@ nav ul ul ul {
     padding-left: 10px;
     height: 40px;
     text-wrap: nowrap;
-     background: #fff;
+     background: #fff7dc;
     border: 1px solid #29547780;
     box-shadow: 0 0 15px #29547730;
     border-radius:8px 15px 15px 8px;
@@ -293,7 +299,7 @@ nav ul ul ul {
     display: flex;
     align-items: center;
     gap: 10px;
-    background: #fff;
+    background: #fff7dc;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
     padding: 20px;
@@ -304,7 +310,7 @@ nav ul ul ul {
 }
 .login-page-buttons a{
     padding: 10px 15px;
-    background: #fff;
+    background: #fff7dc;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
     border-radius: 12px;
@@ -368,7 +374,7 @@ nav ul ul ul {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-     background: #fff;
+     background: #fff7dc;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
     width: 1000px;
@@ -381,7 +387,7 @@ nav ul ul ul {
     flex-direction: column;
     justify-content: center;
     gap: 20px;
-     background: #fff;
+     background: #fff7dc;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
     width: auto;
@@ -427,7 +433,7 @@ nav ul ul ul {
  .form-first-container{
     flex: 1;
     padding: 10px 15px;
-    background: #fff;
+    background: #fff7dc;
     font-size: 16px;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
@@ -436,7 +442,7 @@ nav ul ul ul {
  }
  .form-first-container-input-delete{
     padding: 10px 15px;
-        background: #fff;
+        background: #fff7dc;
         font-size: 16px;
         box-shadow: 0 0 15px #29547730;
         border: 1px solid #29547780;
@@ -447,7 +453,7 @@ nav ul ul ul {
     width: 200px;
     height: 47px;
     font-size: 16px;
-    background: #fff;
+    background: #fff7dc;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
     border-radius: 12px;
@@ -545,7 +551,7 @@ nav ul ul ul {
 .modal-box{
     width: 600px;
     
-    background: #fff;
+    background: #fff7dc;
     border-radius: 15px;
 }
 .hesapla-header{
@@ -566,7 +572,7 @@ nav ul ul ul {
 }
 .head-hesapla-sec{
     width: 200px;
-    background: #fff;
+    background: #fff7dc;
         box-shadow: 0 0 15px #29547730;
         border: 1px solid #29547780;
         border-radius: 12px;
@@ -574,7 +580,7 @@ nav ul ul ul {
 }
 .alt-hesapla-sec{
     width: 350px;
-    background: #fff;
+    background: #fff7dc;
         box-shadow: 0 0 15px #29547730;
         border: 1px solid #29547780;
         border-radius: 12px;
@@ -687,7 +693,7 @@ textarea {
     border: 1px solid #a0b3b0;
     color: #000;
     border-radius: 10px;
-    background: #fff;
+    background: #fff7dc;
         box-shadow: 0 0 15px #29547730;
         border: 1px solid #29547780;
     transition: border-color .25s ease, box-shadow .25s ease;
@@ -712,7 +718,7 @@ select {
     border: 1px solid #a0b3b0;
     color: #00000099;
 
-    background: #fff;
+    background: #fff7dc;
         box-shadow: 0 0 15px #29547730;
         border: 1px solid #29547780;
     transition: border-color .25s ease, box-shadow .25s ease;
@@ -811,7 +817,7 @@ textarea {
 }
 .sigorta-tarihi-content{
     
-    background: #fff;
+    background: #fff7dc;
     
     width: 500px;
     border-radius: 14px;
@@ -830,7 +836,7 @@ textarea {
 }
 .sigorta-tarihi-content_sigortabedeli{
     
-    background: #fff;
+    background: #fff7dc;
     
     
     border-radius: 14px;
@@ -870,7 +876,7 @@ textarea {
 }
 
 .form-bank{
-    background: #fff;
+    background: #fff7dc;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
     padding: 15px;
