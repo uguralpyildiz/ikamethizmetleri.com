@@ -493,7 +493,7 @@ nav ul ul ul {
 
 .table-form-column{
     display: flex;
-    gap: 25px;
+    gap: 10px;
 }
 .square{
     width: 64px !important;
