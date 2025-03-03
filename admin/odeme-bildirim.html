@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +12,9 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
 </head>
-
 <body>
 
-
-
+    
 
 <nav>
     <ul>
@@ -126,193 +123,213 @@
 
     </ul>
 </nav>
-    <div class="container-table">
+    
+    <div class="container-table" >
         <div class="header-nav-container">
             <div class="title-box-l">
-                Abdullah
+                 Abdullah
             </div>
             <div class="header-list" style="width: 390px;">
-                Sigorta Firma Tanımlama
+                <a href="ilk-ikamet-kayit-formu.html">Ödeme Bildirim Listesi</a>
             </div>
-        
             <div class="title-box-l">
-                27.02.2025
+                Depozit: 50.000 TL
+            </div>
+            <div class="title-box-l">
+               Bakiye: 27.400 TL
             </div>
         </div>
-    </div>
-    <div class="container-bank-details">
-        
-        <div class="form-bank">
-
-
-            Yetkili Kişi İsmi <input type="text">
-            Sigorta Firma İsmi <input type="text">
-            Gsm No <input type="text">
-            Mail Adresi <input type="text">
-
-            Banka Adı:
-            <select id="input-bankname">
-                <option value="Ziraat Bankası">Ziraat Bankası</option>
-                <option value="Garanti BBVA">Garanti BBVA</option>
-                <option value="İş Bankası">İş Bankası</option>
-                <option value="Yapı Kredi">Yapı Kredi</option>
-                <option value="Akbank">Akbank</option>
-            </select>
-            Hesap Sahibinin Adı Soyadı <input type="text" id="input-aliciadi">
-            IBAN <input value="TR" type="text" id="input-iban">
-            <div class="table-buttons-container">
-        
-                <div onclick="addTable()" class="table-button">
-                    Kaydet
-                </div>
-                <div class="table-button">
-                    Ana Sayfa
-                </div>
-        
-        
-            </div>
         </div>
-       <div class="container-text-shadow" style="width: 640px;">
-        <div class="new-table" style="padding-right: 10px;">
-            <div class="table-list" style="margin-top: 25px; padding-bottom: 20px;">
-                <div class="table-item" style="width: 500px;">
-                    Sigorta Firma İsmi
+
+            <div class="container-text-shadow" style="width: 1200px; margin: auto">
+                <div class="new-table" style="padding-right: 5px;">
+                    <div class="table-list" style="margin-top: 55px; padding-bottom: 20px;">
+                        <div class="table-item" style="width: 180px;">
+                            Firma İsmi
+                        </div>
+                
+                        <div class="table-item" style="width: 130px;">
+                            Ödeme Tarihi
+                        </div>
+                
+                        <div class="table-item" style="width: 180px;">
+                            Banka
+                        </div>
+
+                        <div class="table-item" style="width: 300px;">
+                            IBAN
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Geçen Süre
+                        </div>
+                
+                        <div class="table-item" style="width: 130px;">
+                            Tutar
+                        </div>
+                
+                        <div class="table-item" style="width: 100px; visibility: hidden;">
+                            Onay
+                        </div>
+                
+                    </div>
+                
                 </div>
+                <form action="#">
+                    <div class="table-container-fluid">
                 
                 
-        
-            </div>
-        
-        </div>
-        <form action="#">
-            <div class="table-container-fluid">
-                <div class="list-table">
-                    <div class="table-list">
-                        <div class="table-item" style="width: 500px;">
-                            Sky Line Sigorta
+                        <div class="new-table">
+                            <div class="list-table">
+                                <div class="table-list">
+                                    <div class="table-item" style="width: 180px;">
+                                        Firma İsmi
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 130px;">
+                                        05.12.2025
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 180px;">
+                                        Yapı Kredi Bankası
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 300px;">
+                                        TR12 3456 7891 2345 6789 4561 23
+                                    </div>
+                                    <div class="table-item" style="width: 130px;">
+                                        Geçen Süre
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 130px;">
+                                        Tutar
+                                    </div>
+                
+                                    <div class="table-item" style="width: 100px;">
+                                        Onayla
+                                    </div>
+                                </div>
+                            </div>
+                
                         </div>
-                        <div class="table-item" style="width: 100px;">
-                            Sil 
+                        <div class="new-table">
+                            <div class="list-table">
+                                <div class="table-list">
+                                    <div class="table-item" style="width: 180px;">
+                                        Firma İsmi
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 130px;">
+                                        05.12.2025
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 180px;">
+                                        Yapı Kredi Bankası
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 300px;">
+                                        TR12 3456 7891 2345 6789 4561 23
+                                    </div>
+                                    <div class="table-item" style="width: 130px;">
+                                        Geçen Süre
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 130px;">
+                                        Tutar
+                                    </div>
+                
+                                    <div class="table-item" style="width: 100px;">
+                                        Onayla
+                                    </div>
+                                </div>
+                            </div>
+                
                         </div>
+                        <div class="new-table">
+                            <div class="list-table">
+                                <div class="table-list">
+                                    <div class="table-item" style="width: 180px;">
+                                        Firma İsmi
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 130px;">
+                                        05.12.2025
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 180px;">
+                                        Yapı Kredi Bankası
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 300px;">
+                                        TR12 3456 7891 2345 6789 4561 23
+                                    </div>
+                                    <div class="table-item" style="width: 130px;">
+                                        Geçen Süre
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 130px;">
+                                        Tutar
+                                    </div>
+                
+                                    <div class="table-item" style="width: 100px;">
+                                        Onayla
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                        <div class="new-table">
+                            <div class="list-table">
+                                <div class="table-list">
+                                    <div class="table-item" style="width: 180px;">
+                                        Firma İsmi
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 130px;">
+                                        05.12.2025
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 180px;">
+                                        Yapı Kredi Bankası
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 300px;">
+                                        TR12 3456 7891 2345 6789 4561 23
+                                    </div>
+                                    <div class="table-item" style="width: 130px;">
+                                        Geçen Süre
+                                    </div>
+                                    
+                                    <div class="table-item" style="width: 130px;">
+                                        Tutar
+                                    </div>
+                
+                                    <div class="table-item" style="width: 100px;">
+                                        Onayla
+                                    </div>
+                                </div>
+                            </div>
+                
+                        </div>
+                       
                         
+                       
+
+                
+                
                     </div>
-                </div>
-                
-                
-                
-                
-                
                
-                
-                
-                
-                
-                
-        
-                
-        
-        
-        
-        
-        
-        
-        
+                </form>
             </div>
         
-        </form>
-       </div>
+      
+        
+        
     </div>
 
-   
-
-<script>
-    function addTable() {
-            const bankname = document.getElementById('input-bankname').value;
-            const aliciadi = document.getElementById('input-aliciadi').value;
-            const iban = document.getElementById('input-iban').value;
-            const havale = document.getElementById('input-havale').value;
-
-            const tableContainer = document.querySelector('.table-container-fluid');
-            const newTable = document.createElement('div');
-            newTable.classList.add('new-table');
-            newTable.innerHTML = `
-                <div class="list-table">
-                    <div class="table-list">
-                        <div id="bankname" class="table-item" style="width: 150px;">${bankname}</div>
-                        <div id="aliciadi" class="table-item" style="width: 150px;">${aliciadi}</div>
-                        <div id="iban" class="table-item" style="width: 250px;">${iban}</div>
-                        <div id="havale" class="table-item" style="width: 150px;">${havale} TL</div>
-                        <div class="table-item table-item-status" style="width: 200px;">
-                            <span>Açık</span>
-                            <span>Kapalı</span>
-                            <span onclick="this.parentElement.parentElement.parentElement.remove()">Sil</span>
-                            
-                           
-                        </div>
-                    </div>
-                </div>
-            `;
-            tableContainer.appendChild(newTable);
-            document.getElementById('input-bankname').selectedIndex = 0;
-            document.getElementById('input-aliciadi').value = "";
-            document.getElementById('input-iban').value = "TR";
-            document.getElementById('input-havale').value = "";
-        }
-</script>
-
-    </div>
-
-   
-    <script>
-        const calc_btn = document.querySelectorAll(".calc-bot")
-        const modalBox = document.querySelector(".modal-overlay")
-        const modalBoxC = document.querySelector(".close-modalbox")
-
-        for (let i = 0; i < calc_btn.length; i++) {
-            calc_btn[i].addEventListener("click", () => {
-                modalBox.style.display = "flex"
-            })
-
-        }
-        modalBoxC.addEventListener("click", () => {
-            modalBox.style.display = "none"
-        })
-
-
-        const calc_btn_sigorta = document.querySelectorAll(".calc-bot_sigorta")
-        const modalBox_sigorta = document.querySelector(".modal-overlay_sigorta")
-        const modalBoxC_sigorta = document.querySelector(".close-modalbox_sigorta")
-
-        for (let i = 0; i < calc_btn_sigorta.length; i++) {
-            calc_btn_sigorta[i].addEventListener("click", () => {
-                modalBox_sigorta.style.display = "flex"
-            })
-
-        }
-        modalBoxC_sigorta.addEventListener("click", () => {
-            modalBox_sigorta.style.display = "none"
-            modalBox.style.display = "none"
-        })
-        const calc_btn_sigorta_bedeli = document.querySelectorAll(".calc-bot_sigorta_bedeli")
-        const modalBox_sigorta_bedeli = document.querySelector(".modal-overlay_sigorta_bedeli")
-        const modalBoxC_sigorta_bedeli = document.querySelector(".close-modalbox_sigorta_bedeli")
-
-        for (let i = 0; i < calc_btn_sigorta_bedeli.length; i++) {
-            calc_btn_sigorta_bedeli[i].addEventListener("click", () => {
-                modalBox_sigorta_bedeli.style.display = "flex"
-            })
-
-        }
-        modalBoxC_sigorta_bedeli.addEventListener("click", () => {
-            modalBox_sigorta_bedeli.style.display = "none"
-            modalBox.style.display = "none"
-        })
-
-    </script>
-
-    <script src="../script.js"></script>
+    
+    
+<script src="../script.js"></script>
 </body>
-
 <div class="buttoninput" id="buttoninput">
     <div class="buttoninput-content">
         <div class="span-in" id="decrease">-</div>

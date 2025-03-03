@@ -150,7 +150,7 @@
                  Abdullah
             </div>
             <div class="header-list">
-                Personel Oluştur
+                Ödeme Bildirim Formu
             </div>
             <div class="title-box-l" >
                 Depozit: 50.000 TL
@@ -164,69 +164,58 @@
 
         <div class="table-buttons-container" style="justify-content: center;">
            
-            <div class="yetkili-ekle">
-                <h2 style="font-weight: 400; text-align: center; width: 100%;">Yetkili Bilgileri</h2>
-                <div class="table-form">
-                    <div class="form-first-container">
-                        <span class="req-st">*</span> Ad:
-                    </div>
-                    <div class="form-first-container-input">
-                        <input type="text" placeholder="İsim Giriniz">
-                    </div>
+        <div class="square-team-squads" >
+            <div class="table-form">
+                <div class="form-first-container">
+                    <span class="req-st"></span> Banka Seçiniz
                 </div>
+                <div class="form-first-container-input">
+                    <select id="il" onchange="ilceGuncelle()" style="width: 250px;">
+                        <option value="">Seçiniz</option>
 
-                <div class="table-form">
-                    <div class="form-first-container">
-                        <span class="req-st">*</span> Soyad:
-                    </div>
-                    <div class="form-first-container-input">
-                        <input type="text" placeholder="Soyadı Giriniz">
-                    </div>
-                </div>
-
-                <div class="table-form">
-                    <div class="form-first-container">
-                        <span class="req-st">*</span> Telefon No:
-                    </div>
-                    <div class="form-first-container-input ">
-                        <div class="flex-phone-input">
-                            <select name="" id="">
-                                <option value="">Kod</option>
-                                <option value="">532</option>
-                                <option value="">123</option>
-                            </select>
-                            <input style="width: 115px;" type="text" placeholder="Numara">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="table-form">
-                    <div class="form-first-container">
-                        <span class="req-st">*</span> E-Posta:
-                    </div>
-                    <div class="form-first-container-input">
-                        <input type="text">
-                    </div>
-                </div>
-
-                <div class="table-form">
-                    <div class="form-first-container">
-                        <span class="req-st">*</span> Şifre:
-                    </div>
-                    <div class="form-first-container-input">
-                        <input type="text">
-                    </div>
-                </div>
-                <div class="table-form">
-                    <div class="form-first-container">
-                        <span class="req-st">*</span> Şifre Tekrar:
-                    </div>
-                    <div class="form-first-container-input">
-                        <input type="text">
-                    </div>
+                    </select>
+            
                 </div>
             </div>
+            <div class="table-form">
+                <div class="form-first-container">
+                    <span class="req-st"></span> Ad Soyad
+                </div>
+                <div class="form-first-container-input-delete" style="width: 185px;">
+                    <span class="req-st"></span> Umut Yıldızhan
+                </div>
+                <div class="form-first-container-input-delete" style="height: 44px; display: flex; align-items: center; justify-content: center;">
+                                <img width="25" height="25" src="https://img.icons8.com/wired/64/copy.png" alt="copy">
+                </div>
             
+            
+            </div>
+            <div class="table-form">
+                <div class="form-first-container">
+                    <span class="req-st"></span> IBAN Bilgileri
+                </div>
+                <div class="form-first-container-input-delete">
+                    <span class="req-st"></span> TR 30 5050 4484 4848 4848 8048 24
+                </div>
+                <div class="form-first-container-input-delete" style="height: 44px; display: flex; align-items: center; justify-content: center;">
+                                <img width="25" height="25" src="https://img.icons8.com/wired/64/copy.png" alt="copy">
+                </div>
+                
+                
+            </div>
+            <div class="table-form">
+                <div class="form-first-container">
+                    <span class="req-st"></span> Tutar
+                </div>
+                <div class="form-first-container">
+                    <span class="req-st"></span> 4.950 TL
+                </div>
+               
+            
+            
+            </div>
+            
+        </div>
             
 
 
@@ -235,7 +224,7 @@
         <div class="table-buttons-container" style="display: flex; align-items: center; justify-content: center;">
         
             <div class="table-button">
-                Oluştur
+                Bildirim Gönder
             </div>
             <div class="table-button">
                 Ana Sayfa

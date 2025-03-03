@@ -279,6 +279,7 @@ nav ul ul ul {
     overflow:auto;
     height: 480px;
     padding-right: 5px;
+    border-bottom: 5px solid #29547780;
 }
 .container-fluid{
     display: flex;
@@ -409,8 +410,8 @@ nav ul ul ul {
  }
  
  .table-button:hover{
-    background: #295477;
-    color: #fff;
+    background: #fff7dc;
+    color: #000;
  }
  
  .disabled-form-i{
