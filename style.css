@@ -277,9 +277,11 @@ nav ul ul ul {
 
 .table-container-fluid{
     overflow:auto;
-    height: 480px;
-    padding-right: 5px;
-    border-bottom: 5px solid #29547780;
+    max-height: 480px;
+    
+
+    border-radius: 15px;
+    box-shadow: 0 0 10px #29547780;
 }
 .container-fluid{
     display: flex;
@@ -306,6 +308,31 @@ nav ul ul ul {
     padding: 20px;
     border-radius: 15px;
 }
+.left-sidebar-container{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: column;
+}
+
+input[type="radio"] {
+    appearance: none;
+    /* Varsayılan stil kaldırılır */
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 50%;
+    /* Daire şekli */
+    background-color: #fff7dc;
+    /* Varsayılan kırmızı */
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+input[type="radio"]:checked {
+    background-color: #dfd8c0;
+    /* Seçildiğinde mavi */
+}
 .flex-items-warranty-card-item-porfessional{
     display: flex;
 }
@@ -326,14 +353,14 @@ nav ul ul ul {
 
 
  ::-webkit-scrollbar-track {
-     background: #00000020;
+     
      width: 5px;
  }
 
  
  ::-webkit-scrollbar-thumb {
-     background: #00000060;
-     border-radius: 5px;
+     background: #29547720;
+     border-radius: 15px;
  }
 
  ::-webkit-scrollbar {
