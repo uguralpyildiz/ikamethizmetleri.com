@@ -88,11 +88,50 @@
                     <a style="font-size: 18px; text-align: center; text-decoration: none;"
                         href="danisman/musteri-listesi.html" onclick="openPopup('danisman/musteri-listesi.html'); return false;" class="button button-block">Kayıt Ol</a>
 
-                        <script>
-                            function openPopup(url) {
-                                window.open(url, 'popupWindow', 'width=1050,height=750,resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no,directories=no');
+                       <script>
+                        function openPopup(url) {
+                                // LocalStorage'dan kaydedilmiş değerleri al
+                                let popupSettings = JSON.parse(localStorage.getItem("popupSettings")) || {
+                                    width: 1280,
+                                    height: 750,
+                                    left: 100,
+                                    top: 100
+                                };
+
+                                // Pop-up'ı kaydedilen değerlerle aç
+                                let popup = window.open(
+                                    url,
+                                    "popupWindow",
+                                    `width=${popupSettings.width},height=${popupSettings.height},left=${popupSettings.left},top=${popupSettings.top},resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no,directories=no`
+                                );
+
+                                if (popup) {
+                                    // Pop-up'ın konum ve boyutunu güncellemek için aralıklarla kontrol et
+                                    let interval = setInterval(() => {
+                                        if (popup.closed) {
+                                            clearInterval(interval); // Pop-up kapanınca interval'i durdur
+                                        } else {
+                                            savePopupState(popup);
+                                        }
+                                    }, 500);
+                                }
                             }
-                        </script>
+
+                            function savePopupState(popup) {
+                                if (!popup) return;
+
+                                let popupState = {
+                                    width: popup.outerWidth,
+                                    height: popup.outerHeight,
+                                    left: popup.screenX,
+                                    top: popup.screenY
+                                };
+
+                                // Yeni boyut ve pozisyonu localStorage'a kaydet
+                                localStorage.setItem("popupSettings", JSON.stringify(popupState));
+                            }
+
+                       </script>
                 </form>
 
             </div>
