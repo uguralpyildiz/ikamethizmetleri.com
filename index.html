@@ -85,53 +85,58 @@
                         <input type="password" required autocomplete="off" />
                     </div>
 
-                    <a style="font-size: 18px; text-align: center; text-decoration: none;"
-                        href="danisman/musteri-listesi.html" onclick="openPopup('danisman/musteri-listesi.html'); return false;" class="button button-block">Kayıt Ol</a>
+                    <a style="font-size: 18px; text-align: center; text-decoration: none;" href="danisman/musteri-listesi.html"
+                        onclick="openPopupAndClose('danisman/musteri-listesi.html'); return false;" class="button button-block">Kayıt Ol</a>
+                    
+                    <script>
+                        function openPopupAndClose(url) {
+                          
+                            let popupSettings = JSON.parse(localStorage.getItem("popupSettings")) || {
+                                width: 1280,
+                                height: 750,
+                                left: 100,
+                                top: 100
+                            };
 
-                       <script>
-                        function openPopup(url) {
-                                // LocalStorage'dan kaydedilmiş değerleri al
-                                let popupSettings = JSON.parse(localStorage.getItem("popupSettings")) || {
-                                    width: 1280,
-                                    height: 750,
-                                    left: 100,
-                                    top: 100
-                                };
+                      
+                            let popup = window.open(
+                                url,
+                                "popupWindow",
+                                `width=${popupSettings.width},height=${popupSettings.height},left=${popupSettings.left},top=${popupSettings.top},resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no,directories=no`
+                            );
 
-                                // Pop-up'ı kaydedilen değerlerle aç
-                                let popup = window.open(
-                                    url,
-                                    "popupWindow",
-                                    `width=${popupSettings.width},height=${popupSettings.height},left=${popupSettings.left},top=${popupSettings.top},resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no,directories=no`
-                                );
+                            if (popup) {
+                              
+                                window.open("about:blank", "_self").close();
 
-                                if (popup) {
-                                    // Pop-up'ın konum ve boyutunu güncellemek için aralıklarla kontrol et
-                                    let interval = setInterval(() => {
-                                        if (popup.closed) {
-                                            clearInterval(interval); // Pop-up kapanınca interval'i durdur
-                                        } else {
-                                            savePopupState(popup);
-                                        }
-                                    }, 500);
-                                }
+                         
+                                let interval = setInterval(() => {
+                                    if (popup.closed) {
+                                        clearInterval(interval); 
+                                    } else {
+                                        savePopupState(popup);
+                                    }
+                                }, 500);
+                            } else {
+                                alert("Pop-up engellendi! Lütfen tarayıcı ayarlarını kontrol edin.");
                             }
+                        }
 
-                            function savePopupState(popup) {
-                                if (!popup) return;
+                        function savePopupState(popup) {
+                            if (!popup) return;
 
-                                let popupState = {
-                                    width: popup.outerWidth,
-                                    height: popup.outerHeight,
-                                    left: popup.screenX,
-                                    top: popup.screenY
-                                };
+                            let popupState = {
+                                width: popup.outerWidth,
+                                height: popup.outerHeight,
+                                left: popup.screenX,
+                                top: popup.screenY
+                            };
 
-                                // Yeni boyut ve pozisyonu localStorage'a kaydet
-                                localStorage.setItem("popupSettings", JSON.stringify(popupState));
-                            }
 
-                       </script>
+                            localStorage.setItem("popupSettings", JSON.stringify(popupState));
+                        }
+                    </script>
+
                 </form>
 
             </div>
@@ -170,31 +175,31 @@
                     </form>
                 </div>
 
-                <!-- Google reCAPTCHA -->
+         
                 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
                 <script>
-                    // Rastgele class ismi oluşturucu
+                 
                     function generateRandomClass() {
                         return 'class-' + Math.random().toString(36).substring(2, 15);
                     }
 
-                    // reCAPTCHA container'ına rastgele class atama
+              
                     const recaptchaContainer = document.getElementById('recaptcha-container');
                     const randomClassName = generateRandomClass();
                     recaptchaContainer.classList.add(randomClassName);
 
-                    // reCAPTCHA'yı oluşturma
+                  
                     function renderRecaptcha() {
                         grecaptcha.render(recaptchaContainer, {
-                            'sitekey': '6LeY39cqAAAAAI99fOriKc_Qfzbdl0V5zhUzyxQ4',  // Kendi site key'inizi buraya ekleyin
+                            'sitekey': '6LeY39cqAAAAAI99fOriKc_Qfzbdl0V5zhUzyxQ4',  
                             'theme': 'light'
                         });
                     }
 
                     window.onload = renderRecaptcha;
 
-                    // Form gönderimini dinleme
+                 
                     document.getElementById('randomForm').addEventListener('submit', function (e) {
                         e.preventDefault();
                         const response = grecaptcha.getResponse();
@@ -202,7 +207,7 @@
                             alert('Lütfen reCAPTCHA doğrulamasını tamamlayın.');
                         } else {
                             alert('Form başarıyla gönderildi!');
-                            // Buraya formunuzu gönderme işlemini ekleyebilirsiniz
+                           
                         }
                     });
                 </script>
@@ -211,11 +216,11 @@
 
             </div>
 
-        </div><!-- tab-content -->
+        </div>
 
     </div>
     <script>
-        // Formdaki input ve textarea'ları seç ve keyup, blur, focus olaylarını dinle
+
         document.querySelectorAll('.form input, .form textarea').forEach((element) => {
             element.addEventListener('keyup', handleEvent);
             element.addEventListener('blur', handleEvent);
@@ -246,12 +251,11 @@
             }
         }
 
-        // Tab tıklama olaylarını dinle
         document.querySelectorAll('.tab a').forEach((tabLink) => {
             tabLink.addEventListener('click', function (e) {
                 e.preventDefault();
 
-                // Aktif sekmeyi ayarla
+               
                 this.parentElement.classList.add('active');
                 Array.from(this.parentElement.parentElement.children).forEach((sibling) => {
                     if (sibling !== this.parentElement) {
@@ -259,7 +263,7 @@
                     }
                 });
 
-                // Hedefi al ve diğer içerikleri gizle
+                
                 const target = this.getAttribute('href');
                 document.querySelectorAll('.tab-content > div').forEach((content) => {
                     if (content.id !== target.substring(1)) {
@@ -267,7 +271,7 @@
                     }
                 });
 
-                // Hedef içeriği göster
+             
                 const targetElement = document.querySelector(target);
                 if (targetElement) {
                     targetElement.style.display = 'block';
@@ -300,13 +304,13 @@
     const increaseButton = document.getElementById("increase");
     const buttonInput = document.getElementById("buttoninput");
 
-    // localStorage'den zoom değeri al, yoksa 1 (100%) olarak ayarla
+
     let zoomValue = parseFloat(localStorage.getItem("zoomValue")) || 1;
 
     function updateZoom() {
         body.style.zoom = zoomValue;
         percentageInput.value = `${Math.round(zoomValue * 100)}%`;
-        // Zoom değeri localStorage'e kaydedilsin
+     
         localStorage.setItem("zoomValue", zoomValue);
     }
 
@@ -318,7 +322,7 @@
     });
 
     increaseButton.addEventListener("click", () => {
-        if (zoomValue < 1.25) { // %125 sınırı
+        if (zoomValue < 1.25) { 
             zoomValue += 0.01;
             updateZoom();
         }
@@ -338,7 +342,7 @@
 
     percentageInput.addEventListener("blur", () => {
         let value = parseFloat(percentageInput.value);
-        if (!isNaN(value) && value >= 50 && value <= 125) { // %125 sınırı
+        if (!isNaN(value) && value >= 50 && value <= 125) { 
             zoomValue = value / 100;
             updateZoom();
         } else {
@@ -349,7 +353,7 @@
     percentageInput.addEventListener("keydown", (e) => {
         if (e.key === "Enter") {
             let value = parseFloat(percentageInput.value);
-            if (!isNaN(value) && value >= 50 && value <= 125) { // %125 sınırı
+            if (!isNaN(value) && value >= 50 && value <= 125) { 
                 zoomValue = value / 100;
                 updateZoom();
             } else {
@@ -360,7 +364,7 @@
 
     document.addEventListener("keydown", (e) => {
         if (e.ctrlKey && e.key === "+") {
-            if (zoomValue < 1.25) { // %125 sınırı
+            if (zoomValue < 1.25) { 
                 zoomValue += 0.01;
                 updateZoom();
             }

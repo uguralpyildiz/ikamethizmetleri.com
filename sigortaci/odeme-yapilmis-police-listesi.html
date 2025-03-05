@@ -12,120 +12,96 @@
         rel="stylesheet">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a>Üyelikler</a>
-                <ul>
-                    <li><a class="aktif">Müşteriler</a>
-                        <ul>
-                            <li><a href="#" class="alt-li aktif">Danışman Listesi</a></li>
-                            <li><a href="#" class="alt-li aktif">Sigortacı Listesi</a></li>
-                            <li><a href="#" class="alt-li aktif">Randevu Personel Listesi</a></li>
-                            <li><a href="#" class="alt-li aktif">Firma Arama</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-    
-            <li><a>Randevu</a>
-                <ul>
-                    <li><a href="alinan-randevu-listesi.html">Alınan Randevu Listesi</a></li>
-                    <li><a href="red-listesi.html">Red Listesi</a></li>
-                    <li><a href="olumlu-liste.html">Olumlu Liste</a></li>
-                    <li><a href="degerlendirme-listesi.html">Değerlendirme Listesi</a></li>
-                    <li><a class="aktif" href="#">Randevu Hesaplama Robotu</a></li>
-                </ul>
-            </li>
-    
-            <li><a>Sigorta</a>
-                <ul>
-                    <li><a href="red-belgeli-police-listesi.html">Red Belgeli Poliçe Listesi</a></li>
-                    <li><a class="aktif" href="#">Ödemesi Yapılmış Sigortalar</a></li>
-                </ul>
-            </li>
-    
-            <li><a>Tanımlama</a>
-                <ul>
-                    <li><a href="banka-tanimlama.html">Banka Tanımlama</a></li>
-                    <li><a>Sigorta</a>
-                        <ul>
-                            <li><a href="sigorta-firma-tanimlama.html" class="alt-li">Sigorta Firma Tanımlama</a></li>
-                            <li><a href="police-firma-tanimlama.html" class="alt-li">Poliçe Firma Tanınmlama</a></li>
-                            <li><a href="sigorta-birlestirme.html" class="alt-li">Poliçe Eşleştirme</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Ülke & Harçlar</a>
-                        <ul>
-                            <li><a href="ulke-tanimlama.html" class="alt-li">Ülke Tanımlama</a></li>
-                            <li><a href="ulke-eslestirme.html" class="alt-li">Ülke Eşleştirme</a></li>
-                        </ul>
-                    </li>
-    
-                </ul>
-            </li>
-    
-            <li><a>Muhasebe</a>
-                <ul>
-                    <li><a class="aktif">Randevu Personel Muhasebe</a>
-                        <ul>
-                            <li><a href="#" class="alt-li aktif">Onay Bekleyen Ödemeler</a></li>
-                            <li><a href="#" class="alt-li aktif">Ödeme Listesi</a></li>
-                            <li><a href="#" class="alt-li aktif">Hakedişler</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Danışman. Muhasebe</a>
-                        <ul>
-                            <li><a href="odeme-bildirim.html" class="alt-li">Ödeme Bildirim Listesi</a></li>
-                            <li><a href="#" class="alt-li aktif">Kesilen Sigorta Listesi</a></li>
-                            <li><a href="onaylanmis-odeme-listesi.html" class="alt-li">Onaylanmış Ödeme Listesi</a></li>
-                        </ul>
-                    </li>
-                    <li><a>Sigorta Muhasebe</a>
-                        <ul>
-                            <li><a href="onay-bekleyen.html" class="alt-li">Onay Bekleyen Ödemeler</a></li>
-                            <li><a href="#" class="alt-li aktif">Ödeme Listesi</a></li>
-                            <li><a href="#" class="alt-li aktif">Kesilen Sigorta Listesi</a></li>
-                            <li><a href="onaylanmis-odeme-listesi.html" class="alt-li">Onaylanmış Ödeme Listesi</a></li>
-                            <li><a href="odeme-bildirim-formu.html" class="alt-li">Ödeme Bildirim Formu</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </li>
-    
-    
-    
-            <li><a>Sabitler</a>
-                <ul>
-                    <li><a href="#" class="alt-li aktif">Müşteri Komisyon Listesi</a></li>
-                    <li><a href="#" class="alt-li aktif">Mesaj</a></li>
-                    <li><a href="#" class="alt-li aktif">Sabit Veriler</a></li>
-                    <li><a href="#" class="alt-li aktif">Banka Hesap Tanımlama</a></li>
-                </ul>
-            </li>
-    
-    
-            <li style="float: right;"><a>Menü (Admin)</a>
-    
-                <ul>
-                    <li><a href="../danisman/musteri-listesi.html">Danışman Girişi</a>
-                    </li>
-    
-                    <li><a href="../sigortaci/index.html">Sigortacı Girişi</a>
-                    </li>
-    
-                </ul>
-            </li>
-    
-    
-        </ul>
-    </nav>
-    <div class="container-table" style="max-width: 1230px;">
+<nav>
+    <ul>
+        <li><a>Personel</a>
+            <ul>
+                <li><a href="yetkili-ekle.html">Personel Oluştur</a></li>
+                <li><a href="yetkili-listesi.html">Personel Listesi</a>
+                </li>
+                <li><a class="aktif" href="#">Personel Yetkilendirme</a>
+                </li>
+
+                <li><a class="aktif" href="#">Personel Karaliste</a></li>
+
+                <li><a class="aktif" href="#">Randevu Personeli Oluşturma</a>
+                </li>
+
+
+            </ul>
+        </li>
+        <li><a>İadeler</a>
+
+            <ul>
+
+                <li><a href="red-listesi.html">Red Belgeli Poliçe Listesi</a>
+                </li>
+                <li><a href="odeme-yapilmis-police-listesi.html">Ödeme Yapılmış Poliçe Listesi</a>
+                </li>
+
+
+
+            </ul>
+        </li>
+
+
+
+
+        <li><a>Sigorta</a>
+
+            <ul>
+
+                <li><a href="kesilecek-sigorta-police-listesi.html">Kesilecek Sigorta Poliçe Listesi</a>
+                </li>
+                <li><a class="aktif" href="#">Sigorta Fiyat Güncelleme</a>
+                </li>
+                <li><a class="aktif" href="#">Sigorta Poliçe Arama</a>
+                </li>
+                <li><a href="sigorta-hesaplama-robotu.html">Sigorta Hesaplama Robotu</a>
+                </li>
+
+
+
+            </ul>
+        </li>
+
+        <li><a>Tanımlama</a>
+            <ul>
+                <li><a href="banka-tanimlama.html">Banka Tanımlama</a></li>
+            </ul>
+        </li>
+
+        <li><a>Muhasebe</a>
+            <ul>
+                <li><a href="odeme-bildirim.html">Onay Bekleyen Ödeme Listesi</a></li>
+                <li><a href="onaylanmis-odeme-listesi.html">Onaylanmış Ödeme Listesi</a></li>
+                <li><a class="aktif" href="#">Site içi Bakiye Yükleme</a></li>
+            </ul>
+        </li>
+
+
+        <li style="float: right;"><a>Menü (Sigortacı)</a>
+
+            <ul>
+                <li><a href="../admin/index.html">Admin Girişi</a>
+                </li>
+
+                <li><a href="../danisman/musteri-listesi.html">Danışman Girişi</a>
+                </li>
+
+            </ul>
+        </li>
+
+
+    </ul>
+</nav>
+    <div class="container-table" style="max-width: 1160px;">
         <div class="header-nav-container" > 
             <div class="title-box-l">
                  Abdullah
             </div>
             <div class="header-list">
-                Olumlu Liste
+                Ödeme Yapılmış Poliçe Listesi
             </div>
             <div class="title-box-l" >
                 27.02.2025
@@ -133,19 +109,14 @@
            
         </div>
 
-        <div class="new-table" style="padding-right: 5px; padding-bottom: 10px;">
-            <div class="table-list" style="margin-top: 80px; padding-bottom: 5px;">
-                <div class="table-item" style="width: 180px;">
+        <div class="new-table" style=" padding-bottom: 0px;">
+            <div class="table-list" style="margin-top: 80px;padding-left: 5px; padding-bottom: 5px; height: 70px;">
+                <div class="table-item" style="width: 180px; ">
                     Ad Soyad
                 </div>
-                <div class="table-item" style="width: 170px;">
-                    Başvuru Tarihi
-                </div>
-                <div class="table-item" style="width: 170px;">
-                    Danışman Firma
-                </div>
+               
                 
-                <div class="wideomancho" style="width: 197px; display: flex;">
+                <div class="wideomancho" style="width: 145px; display: flex; position: relative; left: -5px;">
                     <div class="rotated-item">
                         <div class="rotated-item-div">
                             <div class="rotated-item-text" style="width: 130px; top: -65px; height: 40px">
@@ -168,45 +139,57 @@
                             </div>
                         </div>
                     </div>
-                    <div class="rotated-item">
-                        <div class="rotated-item-div">
-                            <div class="rotated-item-text" style="width: 130px; top: -65px; height: 40px">
-                                Sigorta Poliçe
-                            </div>
-                        </div>
-                    </div>
+                    
                     
                 </div>
         
-                <div class="table-item" style="width: 160px;">
-                    İkamet Bitiş Tarihi
+                <div class="new-set">
+                    <div class="table-item" style="width: 180px;">
+                        Poliçe Firması
+                    </div>
+                    <div class="table-item" style="width: 150px;">
+                        Poliçe Numarası
+                    </div>
+                    <div class="table-item" style="width: 130px;">
+                        Poliçe Fiyatı
+                    </div>
+                    <div class="wideomancho" style="width: 55px; display: flex; margin-left: 4px; position: relative; left: 2px;">
+                        <div class="rotated-item">
+                            <div class="rotated-item-div">
+                                <div class="rotated-item-text" style="width: 130px; top: -70px; height: 50px">
+                                    İndirim Oranı
+                                </div>
+                            </div>
+                        </div>
+                    
+                    
+                    
+                    
+                    </div>
+                    <div class="table-item" style="width: 80px;">
+                        Bedeli
+                    </div>
+                    <div class="table-item" style="width: 180px; position: relative; top: -23px;">
+                        Sigorta Firmasında<br> Onaylayan<br> Personel
+                    </div>
                 </div>
-                <div class="table-item" style="width: 160px;">
-                    Admin Personel
-                </div>
+               
                 
-                <div class="table-item" style="width: 130px; visibility: hidden;">
-                    Kaydet
-                </div>
+            
                 
                 
             </div>
         
         </div>
         <form action="#">
-            <div class="table-container-fluid" style="height: 440px;">
+            <div class="table-container-fluid" style="height: 440px; ">
                 <div class="new-table">
                     <div class="table-list" style="margin-top: 0; padding-bottom: 5px;">
                         
                         <div class="table-item" style="width: 180px;">
                             Umut Yıldızhan  
                         </div>
-                        <div class="table-item" style="width: 170px;">
-                            02.02.2025
-                        </div>
-                        <div class="table-item" style="width: 170px;">
-                            Akım Danışmanlık
-                        </div>
+                        
 
                         <div class="rotated-item">
                             <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
@@ -220,24 +203,40 @@
                                 <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
                                     alt="stack-of-photos">
                             </div>
-                            <div class="rotated-item-div list-item">
-                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
-                                    alt="stack-of-photos">
-                            </div>
+                            
                            
                             
                         </div>
-                       
-                        <div class="table-item" style="width: 160px;">
-                            21.02.2025
+
+
+                        <div class="table-item" style="width: 180px;">
+                            Poliçe Firması
                         </div>
-                        <div class="table-item" style="width: 160px;">
-                            Uğur Yıldız
+                        <div class="table-item" style="width: 150px;">
+                            32132465488
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.548 TL
+                        </div>
+
+                        <div class="rotated-item" >
+                            
+                            <div class="rotated-item-div list-item" style="width: 50px;">
+                                %99
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                       
+                        <div class="table-item" style="width: 80px;">
+                            %10
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Ugur alp yildiz
                         </div>
                         
-                        <div class="table-item" style="width: 130px;">
-                            Kaydet
-                        </div>
 
                        
                     </div>
@@ -249,12 +248,7 @@
                         <div class="table-item" style="width: 180px;">
                             Umut Yıldızhan  
                         </div>
-                        <div class="table-item" style="width: 170px;">
-                            02.02.2025
-                        </div>
-                        <div class="table-item" style="width: 170px;">
-                            Akım Danışmanlık
-                        </div>
+                        
 
                         <div class="rotated-item">
                             <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
@@ -268,24 +262,40 @@
                                 <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
                                     alt="stack-of-photos">
                             </div>
-                            <div class="rotated-item-div list-item">
-                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
-                                    alt="stack-of-photos">
-                            </div>
+                            
                            
                             
                         </div>
-                       
-                        <div class="table-item" style="width: 160px;">
-                            21.02.2025
+
+
+                        <div class="table-item" style="width: 180px;">
+                            Poliçe Firması
                         </div>
-                        <div class="table-item" style="width: 160px;">
-                            Uğur Yıldız
+                        <div class="table-item" style="width: 150px;">
+                            32132465488
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.548 TL
+                        </div>
+
+                        <div class="rotated-item">
+                            
+                            <div class="rotated-item-div list-item" style="width: 50px;">
+                                %99
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                       
+                        <div class="table-item" style="width: 80px;">
+                            %10
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Ugur alp yildiz
                         </div>
                         
-                        <div class="table-item" style="width: 130px;">
-                            Kaydet
-                        </div>
 
                        
                     </div>
@@ -297,12 +307,7 @@
                         <div class="table-item" style="width: 180px;">
                             Umut Yıldızhan  
                         </div>
-                        <div class="table-item" style="width: 170px;">
-                            02.02.2025
-                        </div>
-                        <div class="table-item" style="width: 170px;">
-                            Akım Danışmanlık
-                        </div>
+                        
 
                         <div class="rotated-item">
                             <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
@@ -316,24 +321,40 @@
                                 <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
                                     alt="stack-of-photos">
                             </div>
-                            <div class="rotated-item-div list-item">
-                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
-                                    alt="stack-of-photos">
-                            </div>
+                            
                            
                             
                         </div>
-                       
-                        <div class="table-item" style="width: 160px;">
-                            21.02.2025
+
+
+                        <div class="table-item" style="width: 180px;">
+                            Poliçe Firması
                         </div>
-                        <div class="table-item" style="width: 160px;">
-                            Uğur Yıldız
+                        <div class="table-item" style="width: 150px;">
+                            32132465488
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.548 TL
+                        </div>
+
+                        <div class="rotated-item">
+                            
+                            <div class="rotated-item-div list-item" style="width: 50px;">
+                                %99
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                       
+                        <div class="table-item" style="width: 80px;">
+                            %10
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Ugur alp yildiz
                         </div>
                         
-                        <div class="table-item" style="width: 130px;">
-                            Kaydet
-                        </div>
 
                        
                     </div>
@@ -345,12 +366,7 @@
                         <div class="table-item" style="width: 180px;">
                             Umut Yıldızhan  
                         </div>
-                        <div class="table-item" style="width: 170px;">
-                            02.02.2025
-                        </div>
-                        <div class="table-item" style="width: 170px;">
-                            Akım Danışmanlık
-                        </div>
+                        
 
                         <div class="rotated-item">
                             <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
@@ -364,24 +380,40 @@
                                 <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
                                     alt="stack-of-photos">
                             </div>
-                            <div class="rotated-item-div list-item">
-                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
-                                    alt="stack-of-photos">
-                            </div>
+                            
                            
                             
                         </div>
-                       
-                        <div class="table-item" style="width: 160px;">
-                            21.02.2025
+
+
+                        <div class="table-item" style="width: 180px;">
+                            Poliçe Firması
                         </div>
-                        <div class="table-item" style="width: 160px;">
-                            Uğur Yıldız
+                        <div class="table-item" style="width: 150px;">
+                            32132465488
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.548 TL
+                        </div>
+
+                        <div class="rotated-item">
+                            
+                            <div class="rotated-item-div list-item" style="width: 50px;">
+                                %99
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                       
+                        <div class="table-item" style="width: 80px;">
+                            %10
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Ugur alp yildiz
                         </div>
                         
-                        <div class="table-item" style="width: 130px;">
-                            Kaydet
-                        </div>
 
                        
                     </div>
@@ -393,12 +425,7 @@
                         <div class="table-item" style="width: 180px;">
                             Umut Yıldızhan  
                         </div>
-                        <div class="table-item" style="width: 170px;">
-                            02.02.2025
-                        </div>
-                        <div class="table-item" style="width: 170px;">
-                            Akım Danışmanlık
-                        </div>
+                        
 
                         <div class="rotated-item">
                             <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
@@ -412,24 +439,40 @@
                                 <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
                                     alt="stack-of-photos">
                             </div>
-                            <div class="rotated-item-div list-item">
-                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
-                                    alt="stack-of-photos">
-                            </div>
+                            
                            
                             
                         </div>
-                       
-                        <div class="table-item" style="width: 160px;">
-                            21.02.2025
+
+
+                        <div class="table-item" style="width: 180px;">
+                            Poliçe Firması
                         </div>
-                        <div class="table-item" style="width: 160px;">
-                            Uğur Yıldız
+                        <div class="table-item" style="width: 150px;">
+                            32132465488
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.548 TL
+                        </div>
+
+                        <div class="rotated-item">
+                            
+                            <div class="rotated-item-div list-item" style="width: 50px;">
+                                %99
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                       
+                        <div class="table-item" style="width: 80px;">
+                            %10
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Ugur alp yildiz
                         </div>
                         
-                        <div class="table-item" style="width: 130px;">
-                            Kaydet
-                        </div>
 
                        
                     </div>
@@ -441,12 +484,7 @@
                         <div class="table-item" style="width: 180px;">
                             Umut Yıldızhan  
                         </div>
-                        <div class="table-item" style="width: 170px;">
-                            02.02.2025
-                        </div>
-                        <div class="table-item" style="width: 170px;">
-                            Akım Danışmanlık
-                        </div>
+                        
 
                         <div class="rotated-item">
                             <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
@@ -460,24 +498,40 @@
                                 <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
                                     alt="stack-of-photos">
                             </div>
-                            <div class="rotated-item-div list-item">
-                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
-                                    alt="stack-of-photos">
-                            </div>
+                            
                            
                             
                         </div>
-                       
-                        <div class="table-item" style="width: 160px;">
-                            21.02.2025
+
+
+                        <div class="table-item" style="width: 180px;">
+                            Poliçe Firması
                         </div>
-                        <div class="table-item" style="width: 160px;">
-                            Uğur Yıldız
+                        <div class="table-item" style="width: 150px;">
+                            32132465488
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.548 TL
+                        </div>
+
+                        <div class="rotated-item">
+                            
+                            <div class="rotated-item-div list-item" style="width: 50px;">
+                                %99
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                       
+                        <div class="table-item" style="width: 80px;">
+                            %10
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Ugur alp yildiz
                         </div>
                         
-                        <div class="table-item" style="width: 130px;">
-                            Kaydet
-                        </div>
 
                        
                     </div>
@@ -489,12 +543,7 @@
                         <div class="table-item" style="width: 180px;">
                             Umut Yıldızhan  
                         </div>
-                        <div class="table-item" style="width: 170px;">
-                            02.02.2025
-                        </div>
-                        <div class="table-item" style="width: 170px;">
-                            Akım Danışmanlık
-                        </div>
+                        
 
                         <div class="rotated-item">
                             <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
@@ -508,24 +557,40 @@
                                 <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
                                     alt="stack-of-photos">
                             </div>
-                            <div class="rotated-item-div list-item">
-                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
-                                    alt="stack-of-photos">
-                            </div>
+                            
                            
                             
                         </div>
-                       
-                        <div class="table-item" style="width: 160px;">
-                            21.02.2025
+
+
+                        <div class="table-item" style="width: 180px;">
+                            Poliçe Firması
                         </div>
-                        <div class="table-item" style="width: 160px;">
-                            Uğur Yıldız
+                        <div class="table-item" style="width: 150px;">
+                            32132465488
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.548 TL
+                        </div>
+
+                        <div class="rotated-item">
+                            
+                            <div class="rotated-item-div list-item" style="width: 50px;">
+                                %99
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                       
+                        <div class="table-item" style="width: 80px;">
+                            %10
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Ugur alp yildiz
                         </div>
                         
-                        <div class="table-item" style="width: 130px;">
-                            Kaydet
-                        </div>
 
                        
                     </div>
@@ -537,12 +602,7 @@
                         <div class="table-item" style="width: 180px;">
                             Umut Yıldızhan  
                         </div>
-                        <div class="table-item" style="width: 170px;">
-                            02.02.2025
-                        </div>
-                        <div class="table-item" style="width: 170px;">
-                            Akım Danışmanlık
-                        </div>
+                        
 
                         <div class="rotated-item">
                             <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
@@ -556,24 +616,40 @@
                                 <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
                                     alt="stack-of-photos">
                             </div>
-                            <div class="rotated-item-div list-item">
-                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
-                                    alt="stack-of-photos">
-                            </div>
+                            
                            
                             
                         </div>
-                       
-                        <div class="table-item" style="width: 160px;">
-                            21.02.2025
+
+
+                        <div class="table-item" style="width: 180px;">
+                            Poliçe Firması
                         </div>
-                        <div class="table-item" style="width: 160px;">
-                            Uğur Yıldız
+                        <div class="table-item" style="width: 150px;">
+                            32132465488
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.548 TL
+                        </div>
+
+                        <div class="rotated-item">
+                            
+                            <div class="rotated-item-div list-item" style="width: 50px;">
+                                %99
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                       
+                        <div class="table-item" style="width: 80px;">
+                            %10
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Ugur alp yildiz
                         </div>
                         
-                        <div class="table-item" style="width: 130px;">
-                            Kaydet
-                        </div>
 
                        
                     </div>
@@ -585,12 +661,7 @@
                         <div class="table-item" style="width: 180px;">
                             Umut Yıldızhan  
                         </div>
-                        <div class="table-item" style="width: 170px;">
-                            02.02.2025
-                        </div>
-                        <div class="table-item" style="width: 170px;">
-                            Akım Danışmanlık
-                        </div>
+                        
 
                         <div class="rotated-item">
                             <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
@@ -604,24 +675,40 @@
                                 <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
                                     alt="stack-of-photos">
                             </div>
-                            <div class="rotated-item-div list-item">
-                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
-                                    alt="stack-of-photos">
-                            </div>
+                            
                            
                             
                         </div>
-                       
-                        <div class="table-item" style="width: 160px;">
-                            21.02.2025
+
+
+                        <div class="table-item" style="width: 180px;">
+                            Poliçe Firması
                         </div>
-                        <div class="table-item" style="width: 160px;">
-                            Uğur Yıldız
+                        <div class="table-item" style="width: 150px;">
+                            32132465488
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.548 TL
+                        </div>
+
+                        <div class="rotated-item">
+                            
+                            <div class="rotated-item-div list-item" style="width: 50px;">
+                                %99
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                       
+                        <div class="table-item" style="width: 80px;">
+                            %10
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Ugur alp yildiz
                         </div>
                         
-                        <div class="table-item" style="width: 130px;">
-                            Kaydet
-                        </div>
 
                        
                     </div>
@@ -633,12 +720,7 @@
                         <div class="table-item" style="width: 180px;">
                             Umut Yıldızhan  
                         </div>
-                        <div class="table-item" style="width: 170px;">
-                            02.02.2025
-                        </div>
-                        <div class="table-item" style="width: 170px;">
-                            Akım Danışmanlık
-                        </div>
+                        
 
                         <div class="rotated-item">
                             <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
@@ -652,29 +734,47 @@
                                 <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
                                     alt="stack-of-photos">
                             </div>
-                            <div class="rotated-item-div list-item">
-                                <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
-                                    alt="stack-of-photos">
-                            </div>
+                            
                            
                             
                         </div>
-                       
-                        <div class="table-item" style="width: 160px;">
-                            21.02.2025
+
+
+                        <div class="table-item" style="width: 180px;">
+                            Poliçe Firması
                         </div>
-                        <div class="table-item" style="width: 160px;">
-                            Uğur Yıldız
+                        <div class="table-item" style="width: 150px;">
+                            32132465488
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.548 TL
+                        </div>
+
+                        <div class="rotated-item">
+                            
+                            <div class="rotated-item-div list-item" style="width: 50px;">
+                                %99
+                            </div>
+                            
+                        
+                        
+                        
+                        </div>
+                       
+                        <div class="table-item" style="width: 80px;">
+                            %10
+                        </div>
+                        <div class="table-item" style="width: 180px;">
+                            Ugur alp yildiz
                         </div>
                         
-                        <div class="table-item" style="width: 130px;">
-                            Kaydet
-                        </div>
 
                        
                     </div>
         
                 </div>
+              
+           
                
                 
 
