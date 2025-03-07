@@ -13,7 +13,6 @@ body{
 
 nav{
     padding: 10px 0;
-    
     max-width: 1200px;
     margin: auto;
 }
@@ -25,7 +24,6 @@ nav{
     gap: 10px;
 }
 .link-button{
-    
     background: #fff7dc;
     box-shadow: 0 0 15px #29547730;
     border: 1px solid #29547780;
@@ -36,7 +34,6 @@ nav{
     display: flex;
     gap: 5px;
     flex-direction: column;
-    
     border-radius: 15px;
     border: 1px solid #29547780;
     background: #00000020;
@@ -113,7 +110,6 @@ nav ul li a {
     color: #000;
     text-decoration: none;
     cursor: pointer;
-    
 }
 .alt-li{
     width: 300px;
@@ -148,7 +144,6 @@ nav ul ul ul {
     max-width: 1000px;
     margin: auto;
     margin-top: 25px;
-    
 }
  .header-nav-container {
      display: flex;
@@ -186,6 +181,13 @@ nav ul ul ul {
     font-size: 18px;
     font-style: italic;
     margin-bottom: 20px;
+}
+.filter-container-details{
+    display: flex;
+    align-items: end;
+    gap: 20px;
+    justify-content: start;
+    margin:20px auto ;
 }
 .table-name{
     display: flex;

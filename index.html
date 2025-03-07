@@ -85,57 +85,57 @@
                         <input type="password" required autocomplete="off" />
                     </div>
 
+                  
                     <a style="font-size: 18px; text-align: center; text-decoration: none;" href="danisman/musteri-listesi.html"
-                        onclick="openPopupAndClose('danisman/musteri-listesi.html'); return false;" class="button button-block">Kayıt Ol</a>
+                        onclick="openPopup('danisman/musteri-listesi.html'); return false;" class="button button-block">Kayıt Ol</a>
                     
                     <script>
-                        function openPopupAndClose(url) {
-                          
-                            let popupSettings = JSON.parse(localStorage.getItem("popupSettings")) || {
-                                width: 1280,
-                                height: 750,
-                                left: 100,
-                                top: 100
-                            };
+                        function openPopup(url) {
+                                // LocalStorage'dan kaydedilmiş değerleri al
+                                let popupSettings = JSON.parse(localStorage.getItem("popupSettings")) || {
+                                    width: 1280,
+                                    height: 750,
+                                    left: 100,
+                                    top: 100
+                                };
 
-                      
-                            let popup = window.open(
-                                url,
-                                "popupWindow",
-                                `width=${popupSettings.width},height=${popupSettings.height},left=${popupSettings.left},top=${popupSettings.top},resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no,directories=no`
-                            );
+                                // Pop-up'ı kaydedilen değerlerle aç
+                                let popup = window.open(
+                                    url,
+                                    "popupWindow",
+                                    `width=${popupSettings.width},height=${popupSettings.height},left=${popupSettings.left},top=${popupSettings.top},resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no,directories=no`
+                                );
 
-                            if (popup) {
-                              
-                                window.open("about:blank", "_self").close();
-
-                         
-                                let interval = setInterval(() => {
-                                    if (popup.closed) {
-                                        clearInterval(interval); 
-                                    } else {
-                                        savePopupState(popup);
-                                    }
-                                }, 500);
-                            } else {
-                                alert("Pop-up engellendi! Lütfen tarayıcı ayarlarını kontrol edin.");
+                                if (popup) {
+                                    // Pop-up'ın konum ve boyutunu güncellemek için aralıklarla kontrol et
+                                    let interval = setInterval(() => {
+                                        if (popup.closed) {
+                                            clearInterval(interval); // Pop-up kapanınca interval'i durdur
+                                        } else {
+                                            savePopupState(popup);
+                                        }
+                                    }, 500);
+                                }
                             }
-                        }
 
-                        function savePopupState(popup) {
-                            if (!popup) return;
+                            function savePopupState(popup) {
+                                if (!popup) return;
 
-                            let popupState = {
-                                width: popup.outerWidth,
-                                height: popup.outerHeight,
-                                left: popup.screenX,
-                                top: popup.screenY
-                            };
+                                let popupState = {
+                                    width: popup.outerWidth,
+                                    height: popup.outerHeight,
+                                    left: popup.screenX,
+                                    top: popup.screenY
+                                };
 
-
-                            localStorage.setItem("popupSettings", JSON.stringify(popupState));
-                        }
+                                // Yeni boyut ve pozisyonu localStorage'a kaydet
+                                localStorage.setItem("popupSettings", JSON.stringify(popupState));
+                            }
                     </script>
+
+
+
+
 
                 </form>
 
