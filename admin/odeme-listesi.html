@@ -163,82 +163,332 @@
                 Abdullah
             </div>
             <div class="header-list" style="width: 390px;">
-                Banka Tanımlama
+                Ödeme Listesi
             </div>
-          
+        
             <div class="title-box-l">
                 27.02.2025
             </div>
         </div>
-
-        </div>
-    <div class="container-bank-detail">
+    </div>
+    <div class="container-bank-details" style="width: 1300px; display: flex; align-items: start; justify-content: center; gap: 70px;">
         
-        <div class="form-bank">
-            Banka Adı:
-            <select id="input-bankname">
-                <option value="Ziraat Bankası">Ziraat Bankası</option>
-                <option value="Garanti BBVA">Garanti BBVA</option>
-                <option value="İş Bankası">İş Bankası</option>
-                <option value="Yapı Kredi">Yapı Kredi</option>
-                <option value="Akbank">Akbank</option>
-            </select>
-            Hesap Sahibinin Adı Soyadı <input type="text" id="input-aliciadi">
-            IBAN <input value="TR" type="text" id="input-iban">
-            Aylık Havale Miktarı <input type="text" id="input-havale">
-
-            <div class="table-buttons-container">
+        
+       <div class="container-text-shadow" style="width: 600px;">
+        <div class="new-table">
+            <div class="table-list" style="margin-top: 25px; padding-bottom: 20px;">
+                <div class="table-item" style="width: 720px;">
+                    Sigorta Firmasına Ödeme Listesi
+                </div>
                 
-                <div onclick="addTable()" class="table-button">
-                    Kaydet
-                </div>
-                <div  class="table-button">
-                    Ana Sayfa
-                </div>
-            
-            
+                
+        
             </div>
+        
         </div>
-       <div class="container-text-shadow" style="width: 940px;">
+        <form action="#">
+            <div class="table-container-flusid">
+                <div class="table-form">
+                    <div class="form-first-container-input-delete" style="width: 300px;">
+                        Banka Seçiniz
+                    </div>
+                    <div class="form-first-container-input">
+                        <select id="ilce" style="width: 300px;">
+                            <option value="">Seçiniz</option>
+                        </select>
+                
+                    </div>
+                </div>
+                <div class="table-form">
+                    <div class="form-first-container-input-delete" style="width: 300px;">
+                        Sigorta Firması Seçiniz:
+                    </div>
+                    <div class="form-first-container-input">
+                        <select id="ilce" style="width: 300px;">
+                            <option value="">Seçiniz</option>
+                        </select>
+                
+                    </div>
+                </div>
+            </div>
+        
+            <div class="bank-table-container">
+                <div class="banktable">
+                    <div class="new-table-bank-odeme" style="width: 150px;">
+                        Banka Adı
+                    </div>
+                
+                    <div class="new-table-bank-odeme" style="width: 200px; text-align: end;">
+                        Yapı Kredi Bankası
+                    </div>
+                    
+                </div>
+                <div class="banktable">
+                    <div class="new-table-bank-odeme" style="width: 350px;">
+                        Firma Ünvanı & Adı Soyadı 
+                    </div>
+                
+                    <div class="new-table-bank-odeme" style="width: 200px; text-align: end;">
+                        Ali Demir
+                    </div>
+                    <div class="form-first-container-input-delete"
+                        style="height:35px; width: 35px; margin-left: 10px; display: flex; align-items: center; justify-content: center; position: absolute; right: -40px;">
+                        <img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/copy.png" alt="copy">
+                    </div>
+                </div>
+                <div class="banktable">
+                    <div class="new-table-bank-odeme" style="width: 150px;">
+                        İban Adresi
+                    </div>
+                
+                    <div class="new-table-bank-odeme" style="width: 400px; text-align: end;">
+                        TR35 2000 4000 6600 7000 8000 85
+                    </div>
+                    <div class="form-first-container-input-delete" style="height:35px; width: 35px; margin-left: 10px; display: flex; align-items: center; justify-content: center; position: absolute; right: -40px;">
+                        <img width="25" height="25" src="https://img.icons8.com/ios-glyphs/30/copy.png" alt="copy">
+                    </div>
+                </div>
+                
+                <div class="banktable">
+                    <div class="new-table-bank-odeme" style="width: 150px;">
+                        Gönderilen Tutar
+                    </div>
+                
+                    <div class="new-table-bank-odeme" style="width: 200px; text-align: end;">
+                        4.500 TL
+                    </div>
+                    
+                </div>
+                <br>
+                <div class="banktable">
+                    <div class="new-table-bank-odeme" style="width: 150px;">
+                        Telefon-1
+                    </div>
+                
+                    <div class="new-table-bank-odeme" style="width: 200px; text-align: end;">
+                        05392983507
+                    </div>
+                    
+                </div>
+                <div class="banktable">
+                    <div class="new-table-bank-odeme" style="width: 150px;">
+                        Telefon-2
+                    </div>
+                
+                    <div class="new-table-bank-odeme" style="width: 200px; text-align: end;">
+                        05385921626
+                    </div>
+                    
+                </div>
+                <div class="banktable">
+                    <div class="new-table-bank-odeme" style="width: 150px;">
+                        Telefon-3
+                    </div>
+                
+                    <div class="new-table-bank-odeme" style="width: 200px; text-align: end;">
+                        05337329646
+                    </div>
+                    
+                    
+                </div>
+                <div class="table-buttons-container" style="width: 100%; justify-content: end;">
+                
+                    
+                    <div class="table-button">
+                        Bildirim Gönder
+                    </div>
+                
+                
+                </div>
+            </div>
+        </form>
+       </div>
+       <div class="container-text-shadow" style="width: 530px;">
         <div class="new-table" style="padding-right: 10px;">
             <div class="table-list" style="margin-top: 25px; padding-bottom: 20px;">
-                <div class="table-item" style="width: 150px;">
-                    Banka İsmi
+                <div class="table-item" style="width: 720px;">
+                    Firmalardaki Bakiye Listesi
                 </div>
-        
-                <div class="table-item" style="width: 150px;">
-                    Adı Soyadı
-                </div>
-        
-                <div class="table-item" style="width: 250px;">
-                    İban Adresi
-                </div>
-        
-                <div class="table-item" style="width: 150px;">
-                    Havale Miktarı
-                </div>
-        
-                <div class="table-item" style="width: 200px;">
-                    Durumu
-                </div>
+                
+                
         
             </div>
         
         </div>
         <form action="#">
             <div class="table-container-fluid">
-        
-        
+                <div class="list-table">
+                    <div class="table-list">
+                        <div class="table-item" style="width: 250px;">
+                            Sigorta Firma İsmi
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Yüklü Bakiye
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            Poliçe Sayısı
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="list-table">
+                    <div class="table-list">
+                        <div class="table-item" style="width: 250px;">
+                            Ankara Sigorta
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            1.300 TL
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            145
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="list-table">
+                    <div class="table-list">
+                        <div class="table-item" style="width: 250px;">
+                            Sky Sigorta
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.300 TL
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            142
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="list-table">
+                    <div class="table-list">
+                        <div class="table-item" style="width: 250px;">
+                            Ankara Sigorta
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            1.300 TL
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            145
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="list-table">
+                    <div class="table-list">
+                        <div class="table-item" style="width: 250px;">
+                            Ersin Sigorta
+                        </div>
+                        <div class="table-item eksi-bakiye" style="width: 130px;">
+                            -2.500 TL
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            35
+                        </div>
+                        
+                    </div>
+                </div>
                 
-        
-        
-        
-        
-        
-        
-        
+                <div class="list-table">
+                    <div class="table-list">
+                        <div class="table-item" style="width: 250px;">
+                            Melisa Sigorta
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            4.200 TL
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            21
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="list-table">
+                    <div class="table-list">
+                        <div class="table-item" style="width: 250px;">
+                            Ankara Sigorta
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            1.300 TL
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            145
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="list-table">
+                    <div class="table-list">
+                        <div class="table-item" style="width: 250px;">
+                            Akin Sigorta
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            1.300 TL
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            19
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="list-table">
+                    <div class="table-list">
+                        <div class="table-item" style="width: 250px;">
+                            Mert Sigorta
+                        </div>
+                        <div class="table-item eksi-bakiye" style="width: 130px;">
+                            -250 TL
+                        </div>
+                        <div class="table-item" style="width: 130px;">
+                            13
+                        </div>
+                        
+                    </div>
+                </div>
+                
             </div>
-        
+            <div class="table-buttons-container" style="width: 100%; justify-content: end;">
+            
+            
+                <a href="onay-bekleyen.html" class="table-button">
+                    Ödeme Bildirim Listesi
+                </a>
+                <div class="table-button red-color">
+                    (5)
+                </div>
+            
+            
+            </div>
+            <script>
+                document.addEventListener("DOMContentLoaded", function () {
+                        const container = document.querySelector(".table-container-fluid");
+                        const tables = Array.from(container.querySelectorAll(".list-table"));
+
+                        const header = tables[0]; // Başlık satırını sakla
+                        const rows = tables.slice(1); // Başlığı hariç tut
+
+                        const negativeBalanceTables = [];
+                        const positiveBalanceTables = [];
+
+                        rows.forEach(table => {
+                            const balanceElement = table.querySelector(".table-list .table-item:nth-child(2)"); // 2. sütundaki değer
+                            if (balanceElement && balanceElement.classList.contains("eksi-bakiye")) {
+                                negativeBalanceTables.push(table);
+                            } else {
+                                positiveBalanceTables.push(table);
+                            }
+                        });
+
+                        // Önce tüm tabloyu temizle
+                        container.innerHTML = "";
+
+                        // Başlık satırını tekrar ekle
+                        container.appendChild(header);
+
+                        // Önce eksi bakiyeli olanları, sonra diğerlerini ekle
+                        [...negativeBalanceTables, ...positiveBalanceTables].forEach(table => container.appendChild(table));
+                    });
+
+            </script>
         </form>
        </div>
     </div>
@@ -266,8 +516,6 @@
                             <span>Açık</span>
                             <span>Kapalı</span>
                             <span onclick="this.parentElement.parentElement.parentElement.remove()">Sil</span>
-                            
-                           
                         </div>
                     </div>
                 </div>
