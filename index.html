@@ -91,47 +91,48 @@
                     
                     <script>
                         function openPopup(url) {
-                                // LocalStorage'dan kaydedilmiş değerleri al
-                                let popupSettings = JSON.parse(localStorage.getItem("popupSettings")) || {
-                                    width: 1280,
-                                    height: 750,
-                                    left: 100,
-                                    top: 100
-                                };
+                            let storedSettings = JSON.parse(localStorage.getItem("popupSettings")) || {
+                                width: 1280,
+                                height: 750,
+                                left: 100,
+                                top: 100
+                            };
 
-                                // Pop-up'ı kaydedilen değerlerle aç
-                                let popup = window.open(
-                                    url,
-                                    "popupWindow",
-                                    `width=${popupSettings.width},height=${popupSettings.height},left=${popupSettings.left},top=${popupSettings.top},resizable=no,scrollbars=no,status=no,toolbar=no,menubar=no,location=no,directories=no`
-                                );
+                            let popup = window.open(
+                                url,
+                                "popupWindow",
+                                `width=${storedSettings.width},height=${storedSettings.height},left=${storedSettings.left},top=${storedSettings.top},resizable=yes,scrollbars=no,status=no,toolbar=no,menubar=no,location=no,directories=no`
+                            );
 
-                                if (popup) {
-                                    // Pop-up'ın konum ve boyutunu güncellemek için aralıklarla kontrol et
-                                    let interval = setInterval(() => {
-                                        if (popup.closed) {
-                                            clearInterval(interval); // Pop-up kapanınca interval'i durdur
-                                        } else {
-                                            savePopupState(popup);
-                                        }
-                                    }, 500);
-                                }
+                            if (popup) {
+                                let interval = setInterval(() => {
+                                    if (popup.closed) {
+                                        clearInterval(interval);
+                                    } else {
+                                        savePopupState(popup);
+                                    }
+                                }, 500);
                             }
+                        }
 
-                            function savePopupState(popup) {
-                                if (!popup) return;
+                        function savePopupState(popup) {
+                            if (!popup) return;
 
-                                let popupState = {
-                                    width: popup.outerWidth,
-                                    height: popup.outerHeight,
-                                    left: popup.screenX,
-                                    top: popup.screenY
-                                };
+                            let previousSettings = JSON.parse(localStorage.getItem("popupSettings")) || {};
 
-                                // Yeni boyut ve pozisyonu localStorage'a kaydet
-                                localStorage.setItem("popupSettings", JSON.stringify(popupState));
-                            }
+                            let newHeight = popup.innerHeight; // Çerçevesiz iç yükseklik
+
+                            let popupState = {
+                                width: popup.outerWidth,
+                                height: newHeight, // Artışı engellemek için sadece innerHeight kullanılıyor
+                                left: popup.screenX,
+                                top: popup.screenY
+                            };
+
+                            localStorage.setItem("popupSettings", JSON.stringify(popupState));
+                        }
                     </script>
+
 
 
 

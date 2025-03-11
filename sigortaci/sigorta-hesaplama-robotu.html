@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tablo</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -102,132 +101,137 @@
 
     </ul>
 </nav>
-    <div class="container-table">
+    <div class="container-table" style="max-width: 1250px;">
         <div class="header-nav-container">
             <div class="title-box-l">
-                Abdullah
+                 Abdullah
             </div>
-            <div class="header-list" style="width: 390px;">
-                Banka Tanımlama
+            <div class="header-list">
+                Sigorta Hesaplama Robotu
             </div>
-          
-            <div class="title-box-l">
-                26.02.2025
+            <div class="title-box-l" >
+                11.02.2025
             </div>
+           
         </div>
 
-        </div>
-    <div class="container-bank-detail">
         
-        <div class="form-bank">
-            Banka Adı:
-            <select id="input-bankname">
-                <option value="Ziraat Bankası">Ziraat Bankası</option>
-                <option value="Garanti BBVA">Garanti BBVA</option>
-                <option value="İş Bankası">İş Bankası</option>
-                <option value="Yapı Kredi">Yapı Kredi</option>
-                <option value="Akbank">Akbank</option>
-            </select>
-            Hesap Sahibinin Adı Soyadı <input type="text" id="input-aliciadi">
-            IBAN <input value="TR" type="text" id="input-iban">
-            Aylık Havale Miktarı <input type="text" id="input-havale">
 
-            <div class="table-buttons-container">
-                
-                <div onclick="addTable()" class="table-button">
-                    Kaydet
+        <div class="table-buttons-container" style="justify-content: start; align-items: start;">
+           
+        <div class="square-team-squads" >
+            <div class="table-form">
+                <div class="form-first-container">
+                    <span class="req-st"></span> Doğum Tarihi
                 </div>
-                <div  class="table-button">
-                    Ana Sayfa
+                <div class="form-first-container-input">
+                    <input class="square" type="text" placeholder="Gün">
+                    <input class="square" type="text" placeholder="Ay">
+                    <input class="square year" type="text" placeholder="Yıl" style="width: 74px !important;">
                 </div>
+            </div>
+           
+            <div class="table-form">
+                <div class="form-first-container">
+                    <span class="req-st"></span> Yaşınız
+                </div>
+                <div class="form-first-container-input-delete" style="width: 212px;">
+                    <span class="req-st"></span> 22
+                </div>
+            </div>
+
+            <div class="table-form">
+                <div class="form-first-container" style="width: 220px;">
+                    <span class="req-st"></span> Sigorta Başlama Tarihi
+                </div>
+                <div class="form-first-container-input">
+                    <input class="square" type="text" placeholder="Gün">
+                    <input class="square" type="text" placeholder="Ay">
+                    <input class="square year" type="text" placeholder="Yıl" style="width: 74px !important;">
+                </div>
+            </div>
+            <div class="table-form">
+                <div class="form-first-container" style="width: 15px;">
+                    <span class="req-st"></span> Sigorta Poliçe Süresi
+                </div>
+                <div class="form-first-container-input">
+                    <select id="il" onchange="ilceGuncelle()" style="width: 212px;">
+                        <option value="">1 Yıl</option>
+                        <option value="">2 Yıl</option>
             
+                    </select>
             
+                </div>
+            </div>
+        <div class="table-form">
+            <div class="form-first-container">
+                <span class="req-st">*</span> Telefon No:
+            </div>
+            <div class="form-first-container-input ">
+                <div class="flex-phone-input">
+                    <select name="" id="">
+                        <option value="">Kod</option>
+                        <option value="">532</option>
+                        <option value="">123</option>
+                    </select>
+                    <input style="width: 125px;" type="text" placeholder="Numara">
+                </div>
             </div>
         </div>
-       <div class="container-text-shadow" style="width: 940px;">
-        <div class="new-table" style="padding-right: 10px;">
-            <div class="table-list" style="margin-top: 25px; padding-bottom: 20px;">
-                <div class="table-item" style="width: 150px;">
-                    Banka İsmi
-                </div>
-        
-                <div class="table-item" style="width: 150px;">
-                    Adı Soyadı
-                </div>
-        
-                <div class="table-item" style="width: 250px;">
-                    İban Adresi
-                </div>
-        
-                <div class="table-item" style="width: 150px;">
-                    Havale Miktarı
-                </div>
-        
-                <div class="table-item" style="width: 200px;">
-                    Durumu
-                </div>
-        
-            </div>
-        
+            
         </div>
-        <form action="#">
-            <div class="table-container-fluid">
-        
-        
-                
-        
-        
-        
-        
-        
-        
-        
-            </div>
-        
-        </form>
-       </div>
-    </div>
-
-   
-
-<script>
-    function addTable() {
-            const bankname = document.getElementById('input-bankname').value;
-            const aliciadi = document.getElementById('input-aliciadi').value;
-            const iban = document.getElementById('input-iban').value;
-            const havale = document.getElementById('input-havale').value;
-
-            const tableContainer = document.querySelector('.table-container-fluid');
-            const newTable = document.createElement('div');
-            newTable.classList.add('new-table');
-            newTable.innerHTML = `
-                <div class="list-table">
-                    <div class="table-list">
-                        <div id="bankname" class="table-item" style="width: 150px;">${bankname}</div>
-                        <div id="aliciadi" class="table-item" style="width: 150px;">${aliciadi}</div>
-                        <div id="iban" class="table-item" style="width: 250px;">${iban}</div>
-                        <div id="havale" class="table-item" style="width: 150px;">${havale} TL</div>
-                        <div class="table-item table-item-status" style="width: 200px;">
-                            <span>Açık</span>
-                            <span>Kapalı</span>
-                            <span onclick="this.parentElement.parentElement.parentElement.remove()">Sil</span>
-                            
-                           
-                        </div>
+            
+            <div class="left-sidebar-container ">
+                <div class="sigorta-firma-container"
+                    style="display: flex;align-items: center;font-size: 18px; width: 800px; margin-left: 25px;">
+                    <div class="style-fiw" style="width: 750px;">
+                        Samko Sigorta / Ana Sigorta / Ser 2200 / Poliçe Fiy asdf asd fadsf ad fatı = 4.500 TL
                     </div>
+                    <input name="1"  type="radio" style="width: 20px; margin:0 10px; margin-top: 0;">
                 </div>
-            `;
-            tableContainer.appendChild(newTable);
-            document.getElementById('input-bankname').selectedIndex = 0;
-            document.getElementById('input-aliciadi').value = "";
-            document.getElementById('input-iban').value = "TR";
-            document.getElementById('input-havale').value = "";
-        }
-</script>
+                <div class="sigorta-firma-container"
+                    style="display: flex;align-items: center;font-size: 18px; width: 800px; margin-left: 25px;">
+                    <div class="style-fiw" style="width: 750px;">
+                        Samko Sigorta / Ana Sigorta / Ser 2200 / P ad fatı = 4.500 TL
+                    </div>
+                    <input name="1"  type="radio" style="width: 20px; margin:0 10px; margin-top: 0;">
+                </div>
+                <div class="sigorta-firma-container"
+                    style="display: flex;align-items: center;font-size: 18px; width: 800px; margin-left: 25px;">
+                    <div class="style-fiw" style="width: 750px;">
+                        Samko Sigorta / Ana Sigorta / Ser 2200 / P fadsf ad fatı = 4.500 TL
+                    </div>
+                    <input name="1" type="radio" style="width: 20px; margin:0 10px; margin-top: 0;">
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="table-buttons-container" style="display: flex; align-items: center; justify-content: center;">
+        
+            <div class="table-button">
+                Hesapla
+            </div>
+            <div class="table-button">
+                Ana Sayfa
+            </div>
+            <div class="table-button">
+                Whatsapp
+            </div>
+            <div class="table-button">
+                Poliçe Kes
+            </div>
+            <div class="table-button close-modalbox">
+                Kapat
+            </div>
+        
+        
+        </div>
 
     </div>
 
-   
+
     <script>
         const calc_btn = document.querySelectorAll(".calc-bot")
         const modalBox = document.querySelector(".modal-overlay")
@@ -244,38 +248,8 @@
         })
 
 
-        const calc_btn_sigorta = document.querySelectorAll(".calc-bot_sigorta")
-        const modalBox_sigorta = document.querySelector(".modal-overlay_sigorta")
-        const modalBoxC_sigorta = document.querySelector(".close-modalbox_sigorta")
-
-        for (let i = 0; i < calc_btn_sigorta.length; i++) {
-            calc_btn_sigorta[i].addEventListener("click", () => {
-                modalBox_sigorta.style.display = "flex"
-            })
-
-        }
-        modalBoxC_sigorta.addEventListener("click", () => {
-            modalBox_sigorta.style.display = "none"
-            modalBox.style.display = "none"
-        })
-        const calc_btn_sigorta_bedeli = document.querySelectorAll(".calc-bot_sigorta_bedeli")
-        const modalBox_sigorta_bedeli = document.querySelector(".modal-overlay_sigorta_bedeli")
-        const modalBoxC_sigorta_bedeli = document.querySelector(".close-modalbox_sigorta_bedeli")
-
-        for (let i = 0; i < calc_btn_sigorta_bedeli.length; i++) {
-            calc_btn_sigorta_bedeli[i].addEventListener("click", () => {
-                modalBox_sigorta_bedeli.style.display = "flex"
-            })
-
-        }
-        modalBoxC_sigorta_bedeli.addEventListener("click", () => {
-            modalBox_sigorta_bedeli.style.display = "none"
-            modalBox.style.display = "none"
-        })
-
     </script>
-
-    <script src="../script.js"></script>
+<script src="../script.js"></script>
 </body>
 
 <div class="buttoninput" id="buttoninput">
