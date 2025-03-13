@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+
+    
+
+
+    <nav>
+        <ul>
+            <li><a>Personel</a>
+                <ul>
+                    <li><a href="/danisman/personel/yetkili-ekle.html">Personel Oluştur</a></li>
+                    <li><a href="/danisman/personel/yetkili-listesi.html">Personel Listesi</a>
+                    </li>
+                    <li><a href="/danisman/personel/personel-yetkilendirme.html">Personel Yetkilendirme</a>
+                    </li>
+    
+                    <li><a class="aktif" href="#">Personel Karaliste</a></li>
+    
+                    <li><a class="aktif" href="#">Randevu Personeli Oluşturma</a>
+                    </li>
+    
+    
+                </ul>
+            </li>
+            <li><a>Müşteri</a>
+    
+                <ul>
+                    <li><a href="/danisman/musteri/musteri-ekle.html">Müşteri Ekle</a>
+                    </li>
+                    <li><a href="/danisman/musteri/musteri-listesi.html">Müşteri Listesi</a>
+                    </li>
+                    <li><a href="/danisman/musteri/musteri-arama.html">Müşteri Arama</a>
+                    </li>
+    
+                    <li><a href="/danisman/musteri/karaliste.html">Karaliste</a>
+                    </li>
+                    <li><a href="/danisman/musteri/anlasmazlik-listesi.html">Anlaşmazlık Listesi</a>
+                    </li>
+                    <li><a href="/danisman/musteri/suresi-gecenlerin-listesi.html">Süresi Geçenlerin Listesi</a>
+                    </li>
+    
+    
+                </ul>
+            </li>
+    
+            <li><a>Randevu</a>
+    
+                <ul>
+                    <li><a href="/danisman/musteri/musteri-listesi.html">Müşteri Listesi</a>
+                    </li>
+    
+                    <li><a href="/danisman/randevu/randevu-alinacak-listesi.html">Randevu Alınacak Listesi</a>
+                    <li><a href="/danisman/randevu/randevu-pdf-eklenecek-liste.html">Randevu PDF Ekleme Listesi</a>
+                    <li><a href="/danisman/randevu/randevu-gunu-eklenecek-liste.html">Randevu Günü Eklenecek Liste</a>
+                    <li><a href="/danisman/randevu/dosya-teslim-tarihi.html">Dosya Teslim Tarihi</a>
+                    <li><a href="/danisman/randevu/teslim-edilen-dosya-listesi.html">Teslim Edilen Dosya Listesi</a>
+                    <li><a href="/danisman/randevu/ikamet-hesaplama-robotu.html">İkamet Hesaplama Robotu</a>
+    
+    
+    
+    
+                </ul>
+            </li>
+    
+            </li>
+            <li><a>Randevu Takip</a>
+    
+                <ul>
+    
+                    <li><a href="/danisman/randevu-takip/ikamet-sonucu-girilecek-liste.html">İkamet Sonucu Girilecek
+                            Liste</a>
+                    </li>
+                    <li><a href="/danisman/randevu-takip/olumlu-liste.html">Olumlu Liste</a>
+                    </li>
+                    <li><a href="/danisman/randevu-takip/red-liste.html">Red Liste</a>
+                    </li>
+                    <li><a href="/danisman/randevu-takip/degerlendirme-listesi.html">Değerlendirme Listesi</a>
+                    <li><a href="/danisman/randevu-takip/basvuru-sonuc-listesi.html">Başvuru Sonuç Listesi</a>
+                    <li><a href="/danisman/randevu-takip/alinan-randevu-listesi.html">Alınan Randevu Listesi</a>
+                    <li><a href="/danisman/randevu-takip/sonuc-sorgulama.html">Sonuç Sorgulama</a>
+    
+    
+                </ul>
+            </li>
+    
+            </li>
+            <li><a>Sigorta</a>
+    
+                <ul>
+                    <li><a href="/danisman/sigorta/sigorta-police-olustur.html">Sigorta Poliçe Oluştur</a>
+                    </li>
+                    <li><a href="/danisman/sigorta/sigorta-police-listesi.html">Sigorta Poliçe Listesi</a></li>
+                    <li><a class="aktif" href="#">Kesilen Sigorta Poliçesi</a>
+                    </li>
+                    <li><a href="/danisman/sigorta/kesilecek-sigorta-police-listesi.html">Kesilecek Sigorta Poliçe
+                            Listesi</a>
+                    </li>
+    
+                    <li><a class="aktif" href="#">Sigorta Poliçe Arama</a>
+                    </li>
+                    <li><a href="/danisman/sigorta/sigorta-hesaplama-robotu.html">Sigorta Hesaplama Robotu</a>
+                    </li>
+    
+    
+    
+                </ul>
+            </li>
+            <li><a>Muhasebe</a>
+                <ul>
+                    <li><a href="/danisman/muhasebe/odeme-bildirim-formu.html">Ödeme Bildirim Formu</a></li>
+                    <li><a class="aktif" href="#">Ödeme Listesi</a></li>
+                    <li><a href="/danisman/muhasebe/banka-tanimlama.html">Banka Tanımlama</a></li>
+    
+    
+    
+                </ul>
+            </li>
+            <li><a>Ayarlar</a>
+                <ul>
+                    <li><a href="/danisman/ayarlar/sabit-veriler.html">Sabit Veriler</a></li>
+                </ul>
+            </li>
+            <li><a class="aktif">İletişim</a>
+            </li>
+    
+            <li style="float: right;"><a>Menü (Danışman)</a>
+    
+                <ul>
+                    <li><a href="/admin/randevu/alinan-randevu-listesi.html">Admin Girişi</a>
+                    </li>
+    
+                    <li><a href="/sigortaci/index.html">Sigortacı Girişi</a>
+                    </li>
+    
+                </ul>
+            </li>
+    
+    
+        </ul>
+    </nav>
+    <div class="container-table">
+        <div class="header-nav-container">
+            <div class="title-box-l">
+                 Abdullah
+            </div>
+            <div class="header-list" style="width: 390px;">
+                <a href="ilk-ikamet-kayit-formu.html">Müşteri Listesi</a>
+            </div>
+            <div class="title-box-l" >
+                Depozit: 50.000 TL
+            </div>
+            <div class="title-box-l" >
+               Bakiye: 27.400 TL
+            </div>
+        </div>
+
+            <div class="new-table" style="padding-right: 5px;">
+                <div class="table-list" style="margin-top: 55px; padding-bottom: 20px;">
+                    <div class="table-item" style="width: 350px;">
+                        Adı Soyadı
+                    </div>
+                    <div class="rotated-item">
+                        <div class="rotated-item-div">
+            
+                            <div class="rotated-item-text">
+                                Detaylar
+                            </div>
+                        </div>
+                        <div class="rotated-item-div">
+            
+                            <div class="rotated-item-text">
+                                Resim
+                            </div>
+                        </div>
+                        <div class="rotated-item-div">
+            
+                            <div class="rotated-item-text">
+                                Pasaport
+                            </div>
+                        </div>
+                        <div class="rotated-item-div">
+            
+                            <div class="rotated-item-text">
+                                İkamet K.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-item" style="width: 160px;">
+                        Telefon
+                    </div>
+                    <div class="rotated-item">
+                        <div class="rotated-item-div">
+                            <div class="rotated-item-text">
+                                Hesapla
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-item" style="width: 80px;">
+                        Kategori
+                    </div>
+                    <div class="table-item" style="width: 50px;">
+                        Yaş
+                    </div>
+                    <div class="table-item" style="width: 70px;">
+                        K. Gün
+                    </div>
+            
+                </div>
+            
+            </div>
+            <form action="#">
+                <div class="table-container-fluid">
+                
+                    
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    <div class="new-table">
+                        <div class="list-table">
+                            <div class="table-list">
+                                <div class="table-item table-name" style="width: 350px;">
+                                    <input id="name" type="checkbox" value="Umut Yıldızhan name">
+                                    - Umut Yıldızhan
+                                </div>
+                                <div class="rotated-item">
+                                    <a href="ilk-ikamet-kayit-formu.html" class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/search-more.png"
+                                            alt="search-more" />
+                                    </a>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/material-sharp/24/stack-of-photos.png"
+                                            alt="stack-of-photos" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/passport.png"
+                                            alt="passport" />
+                                    </div>
+                                    <div class="rotated-item-div list-item">
+                                        <img width="50" height="50"
+                                            src="https://img.icons8.com/ios-filled/50/identification-documents.png"
+                                            alt="identification-documents" />
+                                    </div>
+                                </div>
+                                <div class="table-item" style="width: 160px;">
+                                    0 539 (298) 3507
+                                </div>
+                                <div class="rotated-item">
+                                    <div class="rotated-item-div list-item calc-bot">
+                                        <img width="50" height="50" src="https://img.icons8.com/ios-filled/50/calculator.png"
+                                            alt="calculator" />
+                                    </div>
+                                </div>
+                
+                                <div class="table-item" style="width: 80px;">
+                                    Tıkla
+                                </div>
+                
+                                <div class="table-item" style="width: 50px;">
+                                    22
+                                </div>
+                                <div class="table-item" style="width: 70px;">
+                                    356
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                    
+                </div>
+                <div class="table-buttons-container">
+                    <div class="table-button">
+                        <img width="25" height="25" src="https://img.icons8.com/dotty/80/check-all.png" alt="check-all" /> Tümünü Seç
+                    </div>
+                    <div class="table-button">
+                        0
+                    </div>
+                    <div class="table-button">
+                        <img width="25" height="25" src="https://img.icons8.com/material-outlined/50/whatsapp.png" alt="whatsapp" />
+                        WhatsApp'a Bağlan
+                    </div>
+                    <div class="table-button">
+                        Filtrele
+                    </div>
+                    <div class="table-button">
+                        Ana Sayfa
+                    </div>
+                
+                
+                </div>
+            </form>
+        
+      
+        
+        
+    </div>
+
+    <div class="modal-overlay">
+        <div class="modal-box">
+            <div class="hesapla-header" style="text-align: center;">
+                Hesaplama Robotu
+            </div>
+            <div class="hesapla-content">
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">Ad</div>
+                    <div class="alt-hesapla-sec" id="first-name">Gursel</div>
+                </div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">Soyad</div>
+                    <div class="alt-hesapla-sec" id="last-name">Yıldızhan</div>
+                </div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">Telefon</div>
+                    <div class="alt-hesapla-sec" id="phone-number">05326740267</div>
+                </div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">Doğum Tarihi (Yaş)</div>
+                    <div class="alt-hesapla-sec" id="birth-date">19/02/1973 (52)</div>
+                </div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">İkamet Türü</div>
+                    <div class="alt-hesapla-sec" id="residence-type">Kısa Dönem / İlk Randevu</div>
+                </div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">Ülke</div>
+                    <div class="alt-hesapla-sec" id="country">Özbekistan</div>
+                </div>
+                <div class="hr-line"></div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">İlk Vize Harç Bedeli</div>
+                    <div class="alt-hesapla-sec" id="visa-fee">7882₺</div>
+                </div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">Harç Bedeli</div>
+                    <div class="alt-hesapla-sec" id="fee">2.650₺</div>
+                </div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">Sigorta Bedeli</div>
+                    <div class="alt-hesapla-sec" id="insurance-fee">5282₺</div>
+                </div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">Danışmanlık Ücreti</div>
+                    <div class="alt-hesapla-sec" id="consultancy-fee">522₺</div>
+                </div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">Kart Ücreti</div>
+                    <div class="alt-hesapla-sec" id="card-fee">822₺
+
+                    </div>
+                </div>
+                <div class="hr-line"></div>
+                <div class="name-sec">
+                    <div class="head-hesapla-sec">Toplam</div>
+                    <div class="alt-hesapla-sec" id="total">17.212₺</div>
+                </div>
+               
+                <div class="table-buttons-container" style="display: flex; align-items: center; justify-content: center;">
+                    
+                    <a target="_blank" id="whatsapp-link" class="table-button">
+                        <img width="25" height="25" src="https://img.icons8.com/material-outlined/50/whatsapp.png" alt="whatsapp" />
+                        WhatsApp
+                    </a>
+                    <div class="table-button">
+                        SMS Gönder
+                    </div>
+                    <div class="table-button calc-bot_sigorta">
+                        Sigorta Kes
+                    </div>
+                    <div class="table-button">
+                        Yazdır
+                    </div>
+                    <div class="table-button close-modalbox">
+                        Kapat
+                    </div>
+                
+                
+                </div>
+
+                <script>
+                // HTML'deki değerleri alıyoruz
+                const firstName = document.getElementById('first-name').innerText;
+                const lastName = document.getElementById('last-name').innerText;
+                const phoneNumber = document.getElementById('phone-number').innerText;
+                const birthDate = document.getElementById('birth-date').innerText;
+                const residenceType = document.getElementById('residence-type').innerText;
+                const country = document.getElementById('country').innerText;
+                const visaFee = document.getElementById('visa-fee').innerText;
+                const fee = document.getElementById('fee').innerText;
+                const insuranceFee = document.getElementById('insurance-fee').innerText;
+                const consultancyFee = document.getElementById('consultancy-fee').innerText;
+                const cardFee = document.getElementById('card-fee').innerText;
+                const total = document.getElementById('total').innerText;
+
+                // Telefon numarasına ülke kodu ekliyoruz (Türkiye için +90)
+                const formattedPhoneNumber = `+90${phoneNumber.substring(1)}`;
+
+                // WhatsApp mesajını oluşturuyoruz
+                const message = `
+                    *Ad:* ${firstName} ${lastName}
+                    *Telefon:* ${phoneNumber}
+                    *Doğum Tarihi (Yaş):* ${birthDate}
+                    *İkamet Türü:* ${residenceType}
+                    *Ülke:* ${country}
+                    *İlk Vize Harç Bedeli:* ${visaFee}
+                    *Harç Bedeli:* ${fee}
+                    *Sigorta Bedeli:* ${insuranceFee}
+                    *Danışmanlık Ücreti:* ${consultancyFee}
+                    *Kart Ücreti:* ${cardFee}
+                    *Toplam:* ${total}
+                `;
+
+                // WhatsApp linkini oluşturuyoruz
+                const whatsappLink = `https://wa.me/${formattedPhoneNumber}?text=${encodeURIComponent(message.trim())}`;
+
+                // WhatsApp linkini butona ekliyoruz
+                document.getElementById('whatsapp-link').setAttribute('href', whatsappLink);
+            </script>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="sigorta-tarihi-container modal-overlay_sigorta">
+        <div class="sigorta-tarihi-content">
+            
+            <div class="table-buttons-container" style="justify-content: center;">
+            
+                <div class="orke">
+                    <div class="form-first-container" style="width: 300px;">
+                        Tarih Seçiniz
+                    </div>
+                    <div class="form-first-container-input" style="width: 300px;">
+                        <input style="width: 300px;" type="date" placeholder="Ara..">
+                    </div>
+                </div>
+            
+            
+            
+            
+            </div>
+            
+            <div class=" table-buttons-container" style="display: flex; align-items: center; justify-content: center;">
+            
+                <div class="table-button ">
+                    İptal
+                </div>
+                <div class="table-button close-modalbox_sigorta">
+                    Kaydet Gönder
+                </div>
+            
+            
+            </div>
+        </div>
+    </div>
+    <div class="sigorta-tarihi-container_sigortabedeli modal-overlay_sigorta_bedeli">
+        <div class="sigorta-tarihi-content_sigortabedeli">
+            
+            <div class="hesapla-header" style="text-align: center;">
+                Hesaplama Robotu
+            </div>
+            <div class="hesapla-content">
+                <div class="name-sec">
+                    <div class="head-hesapla-sec" style="width: 350px;">
+                        aaaaaa/ddddddd
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (Seri NO:0.1340)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (200.00)(%77)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (P.Ö 660₺)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: auto;">
+                        1 Yıl....
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 140px;">
+                        <div class="end-price" style="display: flex; align-items: center; justify-content: space-between; gap: 4px;">
+                            <label style="position: relative; transform: translateY(0px);left: 0; pointer-events: auto;" for="price-sigorta-2000">2.000₺</label>
+                            <input style="box-shadow: 0 0 0; width: 20px;" id="price-sigorta-2000" name="price-sigorta" type="radio">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="name-sec">
+                    <div class="head-hesapla-sec" style="width: 350px;">
+                        aaaaaa/ssssssss
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (Seri NO:0.1980)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (300.00)(%76)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (P.Ö 1020₺)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: auto;">
+                        1 Yıl....
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 140px;">
+                        <div class="end-price" style="display: flex; align-items: center; justify-content: space-between; gap: 4px;">
+                            <label style="position: relative; transform: translateY(0px);left: 0; pointer-events: auto;" for="price-sigorta-3000">3.000₺</label>
+                            <input style="box-shadow: 0 0 0; width: 20px;" id="price-sigorta-3000" name="price-sigorta" type="radio">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="name-sec">
+                    <div class="head-hesapla-sec" style="width: 350px;">
+                        SKY LİNE SİGORTA/SAMPO SİGORTA ECO
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (Seri NO:0.2847)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (390.00)(%83)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (P.Ö 1053₺)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: auto;">
+                        1 Yıl....
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 140px;">
+                        <div class="end-price" style="display: flex; align-items: center; justify-content: space-between; gap: 4px;">
+                            <label style="position: relative; transform: translateY(0px);left: 0; pointer-events: auto;" for="price-sigorta-3900">3.900₺</label>
+                            <input style="box-shadow: 0 0 0; width: 20px;" id="price-sigorta-3900" name="price-sigorta" type="radio">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="name-sec">
+                    <div class="head-hesapla-sec" style="width: 350px;">
+                        SKY LİNE SİGORTA/TÜRK NİPPON SİGORTA
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (Seri NO:0.4802.16)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (727.60)(%76)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (P.Ö 2473.84₺)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: auto;">
+                        1 Yıl....
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 140px;">
+                        <div class="end-price" style="display: flex; align-items: center; justify-content: space-between; gap: 4px;">
+                            <label style="position: relative; transform: translateY(0px);left: 0; pointer-events: auto;" for="price-sigorta-7276">7.276₺</label>
+                            <input style="box-shadow: 0 0 0; width: 20px;" id="price-sigorta-7276" name="price-sigorta" type="radio">
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="name-sec">
+                    <div class="head-hesapla-sec" style="width: 350px;">
+                        SKY LİNE SİGORTA/MAGDEBURGER
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (Seri NO:0.5733)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (735.00)(%88)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 176px;">
+                        (P.Ö 1617₺)
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: auto;">
+                        1 Yıl....
+                    </div>
+                    <div class="alt-hesapla-sec" style="width: 140px;">
+                        <div class="end-price" style="display: flex; align-items: center; justify-content: space-between; gap: 4px;">
+                            <label style="position: relative; transform: translateY(0px);left: 0; pointer-events: auto;" for="price-sigorta-7350">7.350₺</label>
+                            <input style="box-shadow: 0 0 0; width: 20px;" id="price-sigorta-7350" name="price-sigorta" type="radio">
+                        </div>
+                    </div>
+                </div>
+
+
+               
+                
+               
+            
+                <div class="table-buttons-container" style="display: flex; align-items: center; justify-content: center;">
+            
+                    
+                    <div class="table-button">
+                        En Düşük Poliçe
+                    </div>
+                    
+                    <div class="table-button">
+                        Seç
+                    </div>
+                    <div class="table-button close-modalbox_sigorta_bedeli">
+                        Kapat
+                    </div>
+            
+            
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <script>
+      const calc_btn =  document.querySelectorAll(".calc-bot")
+      const modalBox =  document.querySelector(".modal-overlay")
+      const modalBoxC =  document.querySelector(".close-modalbox")
+
+        for (let i = 0; i < calc_btn.length; i++) {
+            calc_btn[i].addEventListener("click", ()=>{
+                modalBox.style.display = "flex"
+            })
+            
+        }
+        modalBoxC.addEventListener("click", ()=> {
+            modalBox.style.display = "none"
+        })
+      
+
+        const calc_btn_sigorta =  document.querySelectorAll(".calc-bot_sigorta")
+      const modalBox_sigorta =  document.querySelector(".modal-overlay_sigorta")
+      const modalBoxC_sigorta =  document.querySelector(".close-modalbox_sigorta")
+
+        for (let i = 0; i < calc_btn_sigorta.length; i++) {
+            calc_btn_sigorta[i].addEventListener("click", ()=>{
+                modalBox_sigorta.style.display = "flex"
+            })
+            
+        }
+        modalBoxC_sigorta.addEventListener("click", ()=> {
+            modalBox_sigorta.style.display = "none"
+            modalBox.style.display = "none"
+        })
+        const calc_btn_sigorta_bedeli =  document.querySelectorAll(".calc-bot_sigorta_bedeli")
+      const modalBox_sigorta_bedeli =  document.querySelector(".modal-overlay_sigorta_bedeli")
+      const modalBoxC_sigorta_bedeli =  document.querySelector(".close-modalbox_sigorta_bedeli")
+
+        for (let i = 0; i < calc_btn_sigorta_bedeli.length; i++) {
+            calc_btn_sigorta_bedeli[i].addEventListener("click", ()=>{
+                modalBox_sigorta_bedeli.style.display = "flex"
+            })
+            
+        }
+        modalBoxC_sigorta_bedeli.addEventListener("click", ()=> {
+            modalBox_sigorta_bedeli.style.display = "none"
+            modalBox.style.display = "none"
+        })
+        
+    </script>
+
+<script src="/script.js"></script>
+</body>
+<div class="buttoninput" id="buttoninput">
+    <div class="buttoninput-content">
+        <div class="span-in" id="decrease">-</div>
+        <input type="text" id="percentageInput" value="100%" />
+        <div class="span-in" id="increase">+</div>
+    </div>
+</div>
+<script>
+    const body = document.querySelector("body");
+    const percentageInput = document.getElementById("percentageInput");
+    const decreaseButton = document.getElementById("decrease");
+    const increaseButton = document.getElementById("increase");
+    const buttonInput = document.getElementById("buttoninput");
+
+    // localStorage'den zoom değeri al, yoksa 1 (100%) olarak ayarla
+    let zoomValue = parseFloat(localStorage.getItem("zoomValue")) || 1;
+
+    function updateZoom() {
+        body.style.zoom = zoomValue;
+        percentageInput.value = `${Math.round(zoomValue * 100)}%`;
+        // Zoom değeri localStorage'e kaydedilsin
+        localStorage.setItem("zoomValue", zoomValue);
+    }
+
+    decreaseButton.addEventListener("click", () => {
+        if (zoomValue > 0.5) {
+            zoomValue -= 0.01;
+            updateZoom();
+        }
+    });
+
+    increaseButton.addEventListener("click", () => {
+        if (zoomValue < 1.25) { // %125 sınırı
+            zoomValue += 0.01;
+            updateZoom();
+        }
+    });
+
+    updateZoom();
+
+    document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "m") {
+            if (buttonInput.style.display === "none" || buttonInput.style.display === "") {
+                buttonInput.style.display = "flex";
+            } else {
+                buttonInput.style.display = "none";
+            }
+        }
+    });
+
+    percentageInput.addEventListener("blur", () => {
+        let value = parseFloat(percentageInput.value);
+        if (!isNaN(value) && value >= 50 && value <= 125) { // %125 sınırı
+            zoomValue = value / 100;
+            updateZoom();
+        } else {
+            percentageInput.value = `${Math.round(zoomValue * 100)}%`;
+        }
+    });
+
+    percentageInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            let value = parseFloat(percentageInput.value);
+            if (!isNaN(value) && value >= 50 && value <= 125) { // %125 sınırı
+                zoomValue = value / 100;
+                updateZoom();
+            } else {
+                percentageInput.value = `${Math.round(zoomValue * 100)}%`;
+            }
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "+") {
+            if (zoomValue < 1.25) { // %125 sınırı
+                zoomValue += 0.01;
+                updateZoom();
+            }
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "-") {
+            if (zoomValue > 0.5) {
+                zoomValue -= 0.01;
+                updateZoom();
+            }
+        }
+    });
+</script>
+
+
+
+</html>

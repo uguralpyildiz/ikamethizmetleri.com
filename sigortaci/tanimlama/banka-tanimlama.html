@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablo</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="../responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+
+
+<nav>
+    <ul>
+        <li><a>Personel</a>
+            <ul>
+                <li><a class="aktif" href="#">Personel Oluştur</a></li>
+                <li><a class="aktif" href="#">Personel Listesi</a>
+                </li>
+                <li><a class="aktif" href="#">Personel Yetkilendirme</a>
+                </li>
+
+                <li><a class="aktif" href="#">Personel Karaliste</a></li>
+
+                <li><a class="aktif" href="#">Randevu Personeli Oluşturma</a>
+                </li>
+
+
+            </ul>
+        </li>
+        <li><a>İadeler</a>
+
+            <ul>
+
+                <li><a href="/sigortaci/iadeler/red-listesi.html">Red Belgeli Poliçe Listesi</a>
+                </li>
+                <li><a href="/sigortaci/iadeler/odeme-yapilmis-police-listesi.html">Ödeme Yapılmış Poliçe Listesi</a>
+                </li>
+
+
+
+            </ul>
+        </li>
+
+
+
+
+        <li><a>Sigorta</a>
+
+            <ul>
+
+                <li><a href="/sigortaci/sigorta/kesilecek-sigorta-police-listesi.html">Kesilecek Sigorta Poliçe
+                        Listesi</a>
+                </li>
+                <li><a href="/sigortaci/sigorta/sigorta-fiyat-guncelleme.html">Sigorta Fiyat Güncelleme</a>
+                </li>
+                <li><a class="aktif" href="#">Sigorta Poliçe Arama</a>
+                </li>
+                <li><a href="/sigortaci/sigorta/sigorta-hesaplama-robotu.html">Sigorta Hesaplama Robotu</a>
+                </li>
+
+
+
+            </ul>
+        </li>
+
+        <li><a>Tanımlama</a>
+            <ul>
+                <li><a href="/sigortaci/tanimlama/banka-tanimlama.html">Banka Tanımlama</a></li>
+            </ul>
+        </li>
+
+        <li><a>Muhasebe</a>
+            <ul>
+                <li><a href="/sigortaci/muhasebe/odeme-bildirim.html">Onay Bekleyen Ödeme Listesi</a></li>
+                <li><a href="/sigortaci/muhasebe/onaylanmis-odeme-listesi.html">Onaylanmış Ödeme Listesi</a></li>
+                <li><a class="aktif" href="#">Site içi Bakiye Yükleme</a></li>
+            </ul>
+        </li>
+
+
+        <li style="float: right;"><a>Menü (Sigortacı)</a>
+
+            <ul>
+                <li><a href="/admin/randevu/alinan-randevu-listesi.html">Admin Girişi</a>
+                </li>
+
+                <li><a href="/danisman/musteri/musteri-listesi.html">Danışman Girişi</a>
+                </li>
+
+            </ul>
+        </li>
+
+
+    </ul>
+</nav>
+    <div class="container-table">
+        <div class="header-nav-container">
+            <div class="title-box-l">
+                Abdullah
+            </div>
+            <div class="header-list" style="width: 390px;">
+                Banka Tanımlama
+            </div>
+          
+            <div class="title-box-l">
+                26.02.2025
+            </div>
+        </div>
+
+        </div>
+    <div class="container-bank-detail">
+        
+        <div class="form-bank">
+            Banka Adı:
+            <select id="input-bankname">
+                <option value="Ziraat Bankası">Ziraat Bankası</option>
+                <option value="Garanti BBVA">Garanti BBVA</option>
+                <option value="İş Bankası">İş Bankası</option>
+                <option value="Yapı Kredi">Yapı Kredi</option>
+                <option value="Akbank">Akbank</option>
+            </select>
+            Hesap Sahibinin Adı Soyadı <input type="text" id="input-aliciadi">
+            IBAN <input value="TR" type="text" id="input-iban">
+            Aylık Havale Miktarı <input type="text" id="input-havale">
+
+            <div class="table-buttons-container">
+                
+                <div onclick="addTable()" class="table-button">
+                    Kaydet
+                </div>
+                <div  class="table-button">
+                    Ana Sayfa
+                </div>
+            
+            
+            </div>
+        </div>
+       <div class="container-text-shadow" style="width: 940px;">
+        <div class="new-table" style="padding-right: 10px;">
+            <div class="table-list" style="margin-top: 25px; padding-bottom: 20px;">
+                <div class="table-item" style="width: 150px;">
+                    Banka İsmi
+                </div>
+        
+                <div class="table-item" style="width: 150px;">
+                    Adı Soyadı
+                </div>
+        
+                <div class="table-item" style="width: 250px;">
+                    İban Adresi
+                </div>
+        
+                <div class="table-item" style="width: 150px;">
+                    Havale Miktarı
+                </div>
+        
+                <div class="table-item" style="width: 200px;">
+                    Durumu
+                </div>
+        
+            </div>
+        
+        </div>
+        <form action="#">
+            <div class="table-container-fluid">
+        
+        
+                
+        
+        
+        
+        
+        
+        
+        
+            </div>
+        
+        </form>
+       </div>
+    </div>
+
+   
+
+<script>
+    function addTable() {
+            const bankname = document.getElementById('input-bankname').value;
+            const aliciadi = document.getElementById('input-aliciadi').value;
+            const iban = document.getElementById('input-iban').value;
+            const havale = document.getElementById('input-havale').value;
+
+            const tableContainer = document.querySelector('.table-container-fluid');
+            const newTable = document.createElement('div');
+            newTable.classList.add('new-table');
+            newTable.innerHTML = `
+                <div class="list-table">
+                    <div class="table-list">
+                        <div id="bankname" class="table-item" style="width: 150px;">${bankname}</div>
+                        <div id="aliciadi" class="table-item" style="width: 150px;">${aliciadi}</div>
+                        <div id="iban" class="table-item" style="width: 250px;">${iban}</div>
+                        <div id="havale" class="table-item" style="width: 150px;">${havale} TL</div>
+                        <div class="table-item table-item-status" style="width: 200px;">
+                            <span>Açık</span>
+                            <span>Kapalı</span>
+                            <span onclick="this.parentElement.parentElement.parentElement.remove()">Sil</span>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+            `;
+            tableContainer.appendChild(newTable);
+            document.getElementById('input-bankname').selectedIndex = 0;
+            document.getElementById('input-aliciadi').value = "";
+            document.getElementById('input-iban').value = "TR";
+            document.getElementById('input-havale').value = "";
+        }
+</script>
+
+    </div>
+
+   
+    <script>
+        const calc_btn = document.querySelectorAll(".calc-bot")
+        const modalBox = document.querySelector(".modal-overlay")
+        const modalBoxC = document.querySelector(".close-modalbox")
+
+        for (let i = 0; i < calc_btn.length; i++) {
+            calc_btn[i].addEventListener("click", () => {
+                modalBox.style.display = "flex"
+            })
+
+        }
+        modalBoxC.addEventListener("click", () => {
+            modalBox.style.display = "none"
+        })
+
+
+        const calc_btn_sigorta = document.querySelectorAll(".calc-bot_sigorta")
+        const modalBox_sigorta = document.querySelector(".modal-overlay_sigorta")
+        const modalBoxC_sigorta = document.querySelector(".close-modalbox_sigorta")
+
+        for (let i = 0; i < calc_btn_sigorta.length; i++) {
+            calc_btn_sigorta[i].addEventListener("click", () => {
+                modalBox_sigorta.style.display = "flex"
+            })
+
+        }
+        modalBoxC_sigorta.addEventListener("click", () => {
+            modalBox_sigorta.style.display = "none"
+            modalBox.style.display = "none"
+        })
+        const calc_btn_sigorta_bedeli = document.querySelectorAll(".calc-bot_sigorta_bedeli")
+        const modalBox_sigorta_bedeli = document.querySelector(".modal-overlay_sigorta_bedeli")
+        const modalBoxC_sigorta_bedeli = document.querySelector(".close-modalbox_sigorta_bedeli")
+
+        for (let i = 0; i < calc_btn_sigorta_bedeli.length; i++) {
+            calc_btn_sigorta_bedeli[i].addEventListener("click", () => {
+                modalBox_sigorta_bedeli.style.display = "flex"
+            })
+
+        }
+        modalBoxC_sigorta_bedeli.addEventListener("click", () => {
+            modalBox_sigorta_bedeli.style.display = "none"
+            modalBox.style.display = "none"
+        })
+
+    </script>
+
+    <script src="/script.js"></script>
+</body>
+
+<div class="buttoninput" id="buttoninput">
+    <div class="buttoninput-content">
+        <div class="span-in" id="decrease">-</div>
+        <input type="text" id="percentageInput" value="100%" />
+        <div class="span-in" id="increase">+</div>
+    </div>
+</div>
+<script>
+    const body = document.querySelector("body");
+    const percentageInput = document.getElementById("percentageInput");
+    const decreaseButton = document.getElementById("decrease");
+    const increaseButton = document.getElementById("increase");
+    const buttonInput = document.getElementById("buttoninput");
+
+    // localStorage'den zoom değeri al, yoksa 1 (100%) olarak ayarla
+    let zoomValue = parseFloat(localStorage.getItem("zoomValue")) || 1;
+
+    function updateZoom() {
+        body.style.zoom = zoomValue;
+        percentageInput.value = `${Math.round(zoomValue * 100)}%`;
+        // Zoom değeri localStorage'e kaydedilsin
+        localStorage.setItem("zoomValue", zoomValue);
+    }
+
+    decreaseButton.addEventListener("click", () => {
+        if (zoomValue > 0.5) {
+            zoomValue -= 0.01;
+            updateZoom();
+        }
+    });
+
+    increaseButton.addEventListener("click", () => {
+        if (zoomValue < 1.25) { // %125 sınırı
+            zoomValue += 0.01;
+            updateZoom();
+        }
+    });
+
+    updateZoom();
+
+    document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "m") {
+            if (buttonInput.style.display === "none" || buttonInput.style.display === "") {
+                buttonInput.style.display = "flex";
+            } else {
+                buttonInput.style.display = "none";
+            }
+        }
+    });
+
+    percentageInput.addEventListener("blur", () => {
+        let value = parseFloat(percentageInput.value);
+        if (!isNaN(value) && value >= 50 && value <= 125) { // %125 sınırı
+            zoomValue = value / 100;
+            updateZoom();
+        } else {
+            percentageInput.value = `${Math.round(zoomValue * 100)}%`;
+        }
+    });
+
+    percentageInput.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+            let value = parseFloat(percentageInput.value);
+            if (!isNaN(value) && value >= 50 && value <= 125) { // %125 sınırı
+                zoomValue = value / 100;
+                updateZoom();
+            } else {
+                percentageInput.value = `${Math.round(zoomValue * 100)}%`;
+            }
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "+") {
+            if (zoomValue < 1.25) { // %125 sınırı
+                zoomValue += 0.01;
+                updateZoom();
+            }
+        }
+    });
+
+    document.addEventListener("keydown", (e) => {
+        if (e.ctrlKey && e.key === "-") {
+            if (zoomValue > 0.5) {
+                zoomValue -= 0.01;
+                updateZoom();
+            }
+        }
+    });
+</script>
+
+
+
+</html>
