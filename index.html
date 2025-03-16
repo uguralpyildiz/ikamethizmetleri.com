@@ -19,82 +19,310 @@
 
 
 
-<body>
-    <div class="form">
+<body style="background-image: linear-gradient(to right bottom, #051937, #194363, #36728e, #5ba4b6, #8ad8dc);">
+    <style>
+        .containerq {
+  position: relative;
+  width: 100%;
+  background: rgba( 89, 149, 253, 0.15 );
+  min-height: 100vh;
+  overflow: hidden;
+}
 
-        <ul class="tab-group">
-            <li class="tab active"><a href="#signup">Kayıt Ol</a></li>
-            <li class="tab"><a href="#login">Giriş Yap</a></li>
-        </ul>
+.forms-containerq {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
 
-        <div class="tab-content">
-            <div id="signup">
-                <h1>Ücretsiz Kayıt Ol</h1>
+.signin-signup {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 75%;
+  width: 50%;
+  transition: .5s ease-in-out;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+}
 
-                <form action="" method="post">
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0rem 5rem;
+  transition: all 0.5s;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
 
-                    <div class="top-row">
-                        <div class="field-wrap">
-                            <label>
-                                İsim<span class="req">*</span>
-                            </label>
-                            <input type="text" required autocomplete="off" />
-                        </div>
+form.sign-up-form {
+  opacity: 0;
+  z-index: 1;
+}
 
-                        <div class="field-wrap">
-                            <label>
-                                Soyisim<span class="req">*</span>
-                            </label>
-                            <input type="text" required autocomplete="off" />
-                        </div>
-                    </div>
+form.sign-in-form {
+  z-index: 2;
+}
 
+.title {
+  border-bottom:solid rgba( 89, 149, 253, 0.95 ) 3px;
+  font-size: 2.2rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
 
+.input-field {
+  max-width: 250px;
+  width: 100%;
+  background: rgba( 89, 149, 253, 0.95 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18.5px );
+  -webkit-backdrop-filter: blur( 18.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  margin: 5px 0;
+  height: 40px;
+  border-radius: 55px;
+ 
+  position: relative;
+}
 
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #555;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
 
-                    <div class="top-row">
-                        <div class="field-wrap">
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  padding: 15px;
+  font-size: 16px;
+  color: #ffffff;
+}
 
-                            <select name="" id="">
-                                <option value="">Sektör Seçiniz</option>
-                            </select>
-                        </div>
+.input-field input::placeholder {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+}
 
-                        <div class="field-wrap">
-                            <label>
-                                Referans Kodu<span class="req">*</span>
-                            </label>
-                            <input type="text" required autocomplete="off" />
-                        </div>
-                    </div>
+.social-text {
+  padding: 0.7rem 0;
+  font-size: 1rem;
+}
 
-                    <div class="field-wrap">
-                        <div class="flex-area-inspect">
-                            <select style="width: 150px;" name="" id="">
-                                <option value="">Kod: 532</option>
-                            </select>
+.social-media {
+  display: flex;
+  justify-content: center;
+}
 
-                            <input type="email" required autocomplete="off" placeholder="Gsm No" />
-                        </div>
-                    </div>
+.social-icon {
+  background: rgba( 74, 144, 226, 0.35 );
+  backdrop-filter: blur( 1.0px );
+  -webkit-backdrop-filter: blur( 1.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  height: 46px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0.45rem;
+  color: #fff;
+  border-radius: 50%;
+  border: 1px solid #333;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
 
-                    <div class="field-wrap">
-                        <label>
-                            Şifre Oluştur<span class="req">*</span>
-                        </label>
-                        <input type="password" required autocomplete="off" />
-                    </div>
-                    <div class="field-wrap">
-                        <label>
-                            Şifreyi Tekrar Girin<span class="req">*</span>
-                        </label>
-                        <input type="password" required autocomplete="off" />
-                    </div>
+.social-icon:hover {
+  color: #fff;
+  transform: translateY(-0.25em);
+  border-color: #4481eb;
+}
 
-                  
-                    <a style="font-size: 18px; text-align: center; text-decoration: none;" href="danisman/musteri/musteri-listesi.html"
-                        onclick="openPopup('danisman/musteri/musteri-listesi.html'); return false;" class="button button-block">Kayıt Ol</a>
-                    
+.btn {
+  width: 150px;
+  background: rgba( 89, 149, 253, 0.95 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 18.5px );
+  -webkit-backdrop-filter: blur( 18.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  outline: none;
+  height: 39px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #4d84e2;
+}
+.panels-containerq {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.containerq:before {
+  content: "";
+  position: absolute;
+  height: 2000px;
+  width: 2000px;
+  top: -10%;
+  right: 48%;
+  transform: translateY(-50%);
+  transition: .5s ease-in-out;
+  border-radius: 50%;
+  z-index: 6;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+}
+
+.image {
+  width: 100%;
+  transition: transform .1s ease-in-out;
+  transition-delay: 0.1s;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-around;
+  text-align: center;
+  z-index: 6;
+}
+
+.left-panel {
+  pointer-events: all;
+  padding: 3rem 17% 2rem 12%;
+}
+
+.right-panel {
+  pointer-events: none;
+  padding: 3rem 12% 2rem 17%;
+}
+
+.panel .content {
+  color: #fff;
+  transition: transform 0.3s ease-in-out;
+  transition-delay: 0s;
+}
+
+.panel h3 {
+  font-weight: 600;
+  line-height: 1;
+  font-size: 1.5rem;
+}
+
+.panel p {
+  font-size: 0.95rem;
+  padding: 0.7rem 0;
+}
+
+.btn.transparent {
+  margin: 0;
+  background: none;
+  border: 2px solid #fff;
+  width: 130px;
+  height: 41px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.right-panel .image,
+.right-panel .content {
+  transform: translateX(800px);
+}
+
+/* ANIMATION */
+
+.containerq.sign-up-mode:before {
+  transform: translate(100%, -50%);
+  right: 52%;
+}
+.containerq .button{
+    width: 150px;
+    margin-top: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 16px !important;
+    background: rgba( 89, 149, 253, 0.95 );
+}
+.containerq.sign-up-mode .left-panel .image,
+.containerq.sign-up-mode .left-panel .content {
+  transform: translateX(-800px);
+}
+
+.containerq.sign-up-mode .signin-signup {
+  left: 25%;
+}
+
+.containerq.sign-up-mode form.sign-up-form {
+  opacity: 1;
+  z-index: 2;
+}
+
+.containerq.sign-up-mode form.sign-in-form {
+  opacity: 0;
+  z-index: 1;
+}
+
+.containerq.sign-up-mode .right-panel .image,
+.containerq.sign-up-mode .right-panel .content {
+  transform: translateX(0%);
+}
+
+.containerq.sign-up-mode .left-panel {
+  pointer-events: none;
+}
+
+.containerq.sign-up-mode .right-panel {
+  pointer-events: all;
+}
+
+    </style>
+<div class="containerq">
+    <div class="forms-containerq">
+        <div class="signin-signup">
+            <form action="#" class="sign-in-form">
+                
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Kullanıcı Adı" />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Şifre" />
+                </div>
+                <a style="font-size: 18px; text-align: center; text-decoration: none;" href="danisman/musteri/musteri-listesi.html"
+                    onclick="openPopup('danisman/musteri/musteri-listesi.html'); return false;" class="button button-block">Giriş Yap</a>
                     <script>
                         function openPopup(url) {
                             let storedSettings = JSON.parse(localStorage.getItem("popupSettings")) || {
@@ -138,94 +366,95 @@
                             localStorage.setItem("popupSettings", JSON.stringify(popupState));
                         }
                     </script>
-
-
-
-
-
-
-                </form>
-
-            </div>
-
-            <div id="login">
-                <h1>Tekrar Hoş Geldiniz</h1>
-
-
-                <div class="random-container">
-                    <form id="randomForm">
-                        <div class="field-wrap">
-                            <label>
-                                GSM Numarası<span class="req">*</span>
-                            </label>
-                            <input type="email" required autocomplete="off" />
-                        </div>
-
-                        <div class="field-wrap">
-                            <label>
-                                Şifre<span class="req">*</span>
-                            </label>
-                            <input type="password" required autocomplete="off" />
-                        </div>
-
-
-
-
-
-                        <div id="recaptcha-container"></div>
-
-
-
-                        <p class="forgot"><a href="#">Şifremi Unuttum</a></p>
-                        <a style="font-size: 18px; text-align: center; text-decoration: none;"
-                            href="danisman/musteri/musteri-listesi.html" class="button button-block">Giriş Yap</a>
-                    </form>
+            </form>
+            <form action="#" class="sign-up-form">
+                <h2 class="title">Kayıt Ol</h2>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Firma İsmi" />
                 </div>
-
-         
-                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
-                <script>
-                 
-                    function generateRandomClass() {
-                        return 'class-' + Math.random().toString(36).substring(2, 15);
-                    }
-
-              
-                    const recaptchaContainer = document.getElementById('recaptcha-container');
-                    const randomClassName = generateRandomClass();
-                    recaptchaContainer.classList.add(randomClassName);
-
-                  
-                    function renderRecaptcha() {
-                        grecaptcha.render(recaptchaContainer, {
-                            'sitekey': '6LeY39cqAAAAAI99fOriKc_Qfzbdl0V5zhUzyxQ4',  
-                            'theme': 'light'
-                        });
-                    }
-
-                    window.onload = renderRecaptcha;
-
-                 
-                    document.getElementById('randomForm').addEventListener('submit', function (e) {
-                        e.preventDefault();
-                        const response = grecaptcha.getResponse();
-                        if (response.length === 0) {
-                            alert('Lütfen reCAPTCHA doğrulamasını tamamlayın.');
-                        } else {
-                            alert('Form başarıyla gönderildi!');
-                           
-                        }
-                    });
-                </script>
-
-
-
-            </div>
-
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Ad Soyad" />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Telefon" />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Sektör" />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Referans No" />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Adres İli" />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="Adres İlçesi" />
+                </div>
+                <div class="input-field">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder=" Mahallesi" />
+                </div>
+                
+                <input type="submit" class="btn" value="Oluştur" />
+                
+            </form>
         </div>
-
     </div>
+
+    <div class="panels-containerq">
+        <div class="panel left-panel">
+            <div class="content">
+                <h3>Kayıt Ol</h3>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis,
+                    ex ratione. Aliquid!
+                </p>
+                <button class="btn transparent" id="sign-up-btn">
+                    Hesap Oluştur
+                </button>
+            </div>
+            <img src="" class="image imagesign-up" alt="" />
+        </div>
+        <div class="panel right-panel">
+            <div class="content">
+                <h3>Zaten Bir Hesabın Var Mı?</h3>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
+                    laboriosam ad deleniti.
+                </p>
+                <button class="btn transparent" id="sign-in-btn">
+                    Giriş Yap
+                </button>
+            </div>
+            <img src="" class="image imagesign-in" alt="" />
+        </div>
+    </div>
+</div>
+   
+    
+    <script>
+        const sign_in_btn = document.querySelector("#sign-in-btn");
+            const sign_up_btn = document.querySelector("#sign-up-btn");
+            const containerq = document.querySelector(".containerq");
+
+            sign_up_btn.addEventListener("click", () => {
+                containerq.classList.add("sign-up-mode");
+            });
+
+            sign_in_btn.addEventListener("click", () => {
+                containerq.classList.remove("sign-up-mode");
+            });
+    </script>
+    
+    
+    
     <script>
 
         document.querySelectorAll('.form input, .form textarea').forEach((element) => {
